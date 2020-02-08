@@ -12,6 +12,7 @@ surface_set_target(surf);
 draw_clear_alpha(c_black, 0);
 
 
+// color = make_color_rgb(56, 45, 43);
 color = c_black;
 
 

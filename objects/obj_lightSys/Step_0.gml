@@ -15,9 +15,12 @@ if (surface_exists(surf)) {
 	draw_rectangle(0, 0, room_width, room_height, 0);
 	
 	// Set up light sources
-	gpu_set_blendmode(bm_subtract);
+	gpu_set_blendmode(bm_add);
 	with (obj_lightSrc) {
-		draw_sprite_ext(spr_lightSrc, 0, x, y, 1 + random(0.05), 1 + random(0.05), 0, c_white, 0.5);	
+		draw_sprite_ext(spr_lightSrc2, 0, x, y, 0.5 + random(0.05), 0.5 + random(0.05), 0, c_white, 0.2);	
+	}
+	with (obj_godrays) {
+		draw_sprite_ext(spr_godrays, 0, x, y, 0.25, 2, 0, make_color_rgb(229, 221, 100), 0.2);	
 	}
 	gpu_set_blendmode(bm_normal);
 	

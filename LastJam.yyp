@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "6c48fd7d-1046-431d-a579-3fcf50ea082c",
+            "Value": {
+                "id": "8294bb00-f4fc-49f8-a815-353ca355ee49",
+                "resourcePath": "sprites\\spr_lightSrc2\\spr_lightSrc2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71a5a14c-a9c9-4b92-9d2e-cef6bf713c24",
             "Value": {
                 "id": "6a2c4e6d-9a70-4690-ba7b-b74bd87f8598",
@@ -491,6 +499,14 @@
             "Value": {
                 "id": "c03ac85e-f60f-41a6-9ddd-4b4ac5baf7ae",
                 "resourcePath": "sprites\\spr_pawn_walk\\spr_pawn_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "87ed6c33-dc02-4c07-ada0-e28da852422e",
+            "Value": {
+                "id": "df79eb42-0c37-477d-a5ca-97571e46ef99",
+                "resourcePath": "sprites\\spr_godrays\\spr_godrays.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -700,6 +716,14 @@
                 "id": "87359abd-d84e-4065-b376-13b72b60a230",
                 "resourcePath": "sprites\\spr_queen_cloak_idle_right\\spr_queen_cloak_idle_right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e52fc27d-ffba-4ccf-acf7-6a42fdb6307e",
+            "Value": {
+                "id": "aa674a13-33ba-413e-978a-81b9e64942d2",
+                "resourcePath": "objects\\obj_godrays\\obj_godrays.yy",
+                "resourceType": "GMObject"
             }
         },
         {
