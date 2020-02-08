@@ -100,6 +100,20 @@ if (place_meeting(x, y + vsp, obj_solid)){
 x += hsp;
 y += vsp;
 
+// Debug for Health
+if (keyboard_check_pressed(vk_add)) {
+	hitpoints++;	
+}
+else if (keyboard_check_pressed(vk_subtract)) {
+	hurt = true;
+	invin = true;
+}
+
+// Health Stuff
+if (hurt) {
+	if (alarm[3] < 0) alarm[3] = room_speed * 0.5;	
+}
+
 // Gunplay
 if (mouse_check_button(mb_left) && !fire_delay && grounded) { // Check for input
 	pointX = mouse_x;
