@@ -7,7 +7,7 @@ mass = 0.3;
 termVel = 50;
 vsp = 0;
 grounded = false;
-jumps = 2;
+jumps = 1; // These are additional jumps, setting to zero removes double jump
 maxJumps = jumps;
 
 // Gun vars

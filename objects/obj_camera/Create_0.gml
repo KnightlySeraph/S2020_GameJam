@@ -16,7 +16,7 @@ height = 1080;
 oriHeight = height;
 aspectRatio = 0.5625;
 zoomSpeed = 100;
-zLookRange = 10;
+zLookRange = 1000000000000;
 
 var vm = matrix_build_lookat(x, y, -zLookRange, x, y, zLookRange, 0, 1, 0);
 var pm = matrix_build_projection_ortho(1920, 1080, -zLookRange, zLookRange);
