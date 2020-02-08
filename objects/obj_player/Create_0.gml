@@ -7,6 +7,8 @@ mass = 0.3;
 termVel = 50;
 vsp = 0;
 grounded = false;
+jumps = 2;
+maxJumps = jumps;
 
 // Gun vars
 is_firing = false;

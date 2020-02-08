@@ -5,13 +5,23 @@ move = keyboard_check(ord("D")) + -keyboard_check(ord("A"));
 hsp = move * movementSpeed;
 jump = keyboard_check_pressed(vk_space);
 
-if (jump && grounded) {
+if (jump && jump > 0) {
 	vsp = -jumpForce;
+	jump--;
 }
 
 // Check for grounded
 if (place_meeting(x, y + 1, obj_solid)) {
 	grounded = true;	
+}
+else {
+	grounded = false;	
+	show_debug_message("I am not grounded");
+}
+
+// Reset jumps
+if (grounded) {
+	jumps = maxJumps;
 }
 
 // Gravity
