@@ -17,7 +17,7 @@ if (surface_exists(surf)) {
 	// Set up light sources
 	gpu_set_blendmode(bm_subtract);
 	with (obj_lightSrc) {
-		draw_sprite_ext(spr_sphere, 0, x, y, 1 + random(0.05), 1 + random(0.05), 0, c_white, 0.5);	
+		draw_sprite_ext(spr_lightSrc, 0, x, y, 1 + random(0.05), 1 + random(0.05), 0, c_white, 0.5);	
 	}
 	gpu_set_blendmode(bm_normal);
 	
