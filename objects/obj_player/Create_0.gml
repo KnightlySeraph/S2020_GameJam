@@ -22,7 +22,8 @@ moving_left = false;
 
 
 // Other Gameplay Stuff
-hitpoints = 3;
+hitpoints = 7;
+hurt = false;
 canSuck = false;
 sucking = false;
 
@@ -37,3 +38,6 @@ invin = false;
 suckShake = 3;
 oriSuckShake = suckShake;
 suckShakeInc = 0.1;
+
+// UI Stuff
+hitpointOffset = 64;
