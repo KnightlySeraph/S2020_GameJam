@@ -5,5 +5,5 @@ if(state != "DEATH" && state != "HOLLOW") {
 	alert = true;
 	alert_timer = 0;
 	var bullet = instance_place(x,y,obj_bullet);
-	with(bullet) instance_destroy();
+	// with(bullet) instance_destroy();
 }

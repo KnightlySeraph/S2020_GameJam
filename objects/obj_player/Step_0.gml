@@ -56,11 +56,21 @@ if (keyboard_check(ord("S")) && place_meeting(x, y, obj_enemy)) {
 	scr_camShake(suckShake, 30);
 	suckShake += suckShakeInc;
 	suckShake = clamp(suckShake, 0.0, 30);
+	// Screen dim
+	with (obj_lightSys) {
+		intensity += 0.01;	
+		intensity = clamp(intensity, 0.0, 0.6);
+	}
 }
 else {
 	sucking = false;	
 	scr_cam_zoom(1080, 1, 0.1, 1);
 	suckShake = oriSuckShake;
+	// Make screen light
+	with (obj_lightSys) {
+		intensity -= 0.01;
+		intensity = clamp(intensity, 0.0, 1.0);
+	}
 }
 
 // Collision
@@ -84,7 +94,7 @@ x += hsp;
 y += vsp;
 
 // Gunplay
-if (mouse_check_button(mb_left) && !fire_delay) { // Check for input
+if (mouse_check_button(mb_left) && !fire_delay && grounded) { // Check for input
 	pointX = mouse_x;
 	pointY = mouse_y;
 	is_firing = true;
