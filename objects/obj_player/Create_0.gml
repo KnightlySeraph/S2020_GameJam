@@ -7,3 +7,8 @@ mass = 0.3;
 termVel = 50;
 vsp = 0;
 grounded = false;
+
+// Gun vars
+is_firing = false;
+fire_rate = 1;
+projectile_speed = 15;

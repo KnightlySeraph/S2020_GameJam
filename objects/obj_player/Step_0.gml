@@ -38,3 +38,17 @@ if (place_meeting(x, y + vsp, obj_solid)){
 // Update the player's position
 x += hsp;
 y += vsp;
+
+// Gunplay
+if (mouse_check_button(mb_left)) { // Check for input
+	pointX = mouse_x;
+	pointY = mouse_y;
+	is_firing = true;
+}
+
+// Fire a bullet
+if (is_firing) {
+	
+	
+	is_firing = false;
+}
