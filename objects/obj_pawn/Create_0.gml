@@ -12,5 +12,8 @@ spd = 5;
 maxHealth = 100;
 currentHealth = maxHealth;
 
+alerted = false;
+timer = 0;
+
 ready = false;
 hollow = false;

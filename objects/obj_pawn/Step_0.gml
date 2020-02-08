@@ -1,9 +1,13 @@
+mask_index = spr_pawn_idle;
+
 switch(state) {
 	case "IDLE":
+		hsp = 0;
 		break;
 	
 	case "WALK":
-		if(vsp==0) hsp = spd * -direct;
+		sprite_index = spr_pawn_walk;
+		if(vsp==0) state = "IDLE";
 		break;
 		
 	case "ATTACK":
