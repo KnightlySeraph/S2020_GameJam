@@ -13,5 +13,6 @@ if(speed != 0) {
 	// Change Effect
 	sprite_index = spr_player_bullet_boom;
 	speed = 0;
-	image_index = 0;	
+	image_index = 0;
+	image_angle = irandom_range(0,360);
 }
