@@ -36,6 +36,7 @@ else {
 	if(alert_timer > 30) {
 		alert = false;
 		exclamation = false;
+		sprite_index = spr_rook_idle;
 	}
 }
 
@@ -45,10 +46,9 @@ if(alert && sprite_index != spr_rook_hide && sprite_index != spr_rook_idle_hide 
 
 if(alert && !exclamation && state != "DEATH" && state != "HOLLOW") {
 	exclamation = true;
-	timer = 100;
 	var point = instance_create_depth(x,y,depth,obj_alert);
 	point.parent = self;
-	point.yoffset = -16;
+	point.yoffset = -96;
 }
 
 if(hurt) image_alpha = random_range(0.4, 0.9);
