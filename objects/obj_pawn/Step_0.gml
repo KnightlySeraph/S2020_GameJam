@@ -62,7 +62,12 @@ switch(state) {
 		break;
 }
 
-if(currentHealth <= 0 && !ready) state = "DEATH";
+if(currentHealth <= 0 && !ready) {
+	state = "DEATH";
+	if(place_meeting(x-(direct * 70), y, obj_solid) || !place_meeting(x-(direct*70), y+1, obj_solid)) {
+		direct = -direct;
+	}
+}
 
 if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player.x - x) == -direct) {
 	alert = true;
@@ -70,7 +75,18 @@ if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player
 }
 else {
 	alert_timer += 1;
-	if(alert_timer > 30) alert = false;
+	if(alert_timer > 30) {
+		alert = false;
+		exclamation = false;
+	}
+}
+
+if(alert && !exclamation && state != "DEATH" && state != "HOLLOW") {
+	exclamation = true;
+	var point = instance_create_depth(x,y,depth,obj_alert);
+	point.parent = self;
+	point.yoffset = -16;
+	point.image_xscale = direct;
 }
 
 if(hurt) image_alpha = random_range(0.4, 0.9);
