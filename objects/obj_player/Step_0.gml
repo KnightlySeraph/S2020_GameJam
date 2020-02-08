@@ -8,6 +8,13 @@ if (keyboard_check_pressed(ord("T"))) {
 // Collision mask
 mask_index = spr_player_idle_left;
 
+// Reset image speed
+if (image_speed == 0.0) {
+	if (sprite_index != spr_player_jump_left && sprite_index != spr_player_jump_right) {
+		image_speed = 1.0;	
+	}
+}
+
 // Collect Input
 move = keyboard_check(ord("D")) + -keyboard_check(ord("A"));
 hsp = move * movementSpeed;
@@ -169,4 +176,24 @@ if (move == 0 && grounded && mouse_check_button(mb_left)) {
 	else if (moving_left) {
 		sprite_index = spr_player_shoot_idle_left;	
 	}
+}
+
+// Falling Animation
+if (!grounded && vsp > 0) {
+	if (moving_right) {
+		sprite_index = spr_player_fall_right;	
+	}
+	else if (moving_left) {
+		sprite_index = spr_player_fall_left;	
+	}
+}
+
+// Jumping Animation
+if(vsp <= 0 && !grounded) {
+	if (moving_right) {
+		sprite_index = spr_player_jump_right;	
+	}
+	else if (moving_left) {
+		sprite_index = spr_player_jump_left;	
+	}	
 }
