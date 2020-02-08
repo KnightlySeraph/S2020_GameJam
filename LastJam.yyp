@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "40f6babc-1c83-4d5a-a944-efa66a0fc17e",
+            "Value": {
+                "id": "27b849a2-cd0a-45b8-80e1-50119580b72a",
+                "resourcePath": "scripts\\scr_camShake\\scr_camShake.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "41217f69-02a9-4d1c-bd04-4e10f9c77f2c",
             "Value": {
                 "id": "2256d8c8-aa5c-482e-b2ba-60de34d05e7f",
@@ -477,10 +485,18 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "fe5b4f54-ba3d-4e6a-914b-516c8ce53237",
+            "Value": {
+                "id": "64557013-e46d-4572-bb8c-bbcd72dc7720",
+                "resourcePath": "sprites\\spr_player_walking_right\\spr_player_walking_right.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
-        
+        "40f6babc-1c83-4d5a-a944-efa66a0fc17e"
     ],
     "tutorial": ""
 }

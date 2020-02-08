@@ -1,5 +1,8 @@
 /// @description Movement and Physics
 
+// Collision mask
+mask_index = spr_player_idle_left;
+
 // Collect Input
 move = keyboard_check(ord("D")) + -keyboard_check(ord("A"));
 hsp = move * movementSpeed;
@@ -93,5 +96,15 @@ if (move == 0 && grounded && !mouse_check_button(mb_left)) {
 	}
 	else if (moving_left) {
 		sprite_index = spr_player_idle_left;
+	}
+}
+
+// Moving left or right and not firing
+if (move != 0 && grounded && !mouse_check_button(mb_left)) {
+	if (move == 1) {
+		sprite_index = spr_player_walking_right;	
+	}
+	else if (move == -1) {
+		sprite_index = spr_player_walking_left;	
 	}
 }
