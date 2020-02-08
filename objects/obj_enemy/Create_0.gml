@@ -6,3 +6,5 @@ ready = false;
 hollow = false;
 state = "NONE";
 suck_x = x;
+
+dark_alpha = 0;
