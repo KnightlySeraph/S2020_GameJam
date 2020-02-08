@@ -13,6 +13,7 @@ switch(state) {
 				direct = choose(1,-1);
 			}
 		}
+		
 		break;
 	
 	case "WALK":
@@ -26,9 +27,17 @@ switch(state) {
 				random_num = irandom_range(90,120);
 			}
 		}
+		else {
+			direct = -sign(obj_player.x - x);
+			if(abs(x-obj_player.x) < 128) {
+				state = "ATTACK";
+				hsp = 0;
+			}
+		}
 		break;
 		
 	case "ATTACK":
+		sprite_index = spr_pawn_attack;
 		break;
 		
 	case "DEATH":
@@ -37,6 +46,10 @@ switch(state) {
 	case "HOLLOW":
 		break;
 }
+
+
+if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player.x - x) == -direct) alert = true;
+else alert = false
 
 vsp += grav;
 

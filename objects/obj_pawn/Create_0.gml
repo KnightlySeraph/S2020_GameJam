@@ -7,7 +7,7 @@ hsp = 0;
 vsp = 0;
 grav = 1;
 
-spd = 5;
+spd = 3;
 
 maxHealth = 100;
 currentHealth = maxHealth;
