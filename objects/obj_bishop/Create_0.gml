@@ -21,3 +21,5 @@ hurt = false;
 
 ready = false;
 hollow = false;
+
+suck_x = x;
