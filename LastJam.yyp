@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "68b3c844-4d05-40a1-bf47-f61216b6eac5",
+            "Value": {
+                "id": "f8681948-53c1-44b3-86c4-69895970aa05",
+                "resourcePath": "sprites\\spr_pawn_hollow\\spr_pawn_hollow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6a4a8718-8648-4308-81a9-1cbb8e835d76",
             "Value": {
                 "id": "98bc8ccc-97e5-459e-bf3b-a80044961957",
@@ -519,6 +527,14 @@
             }
         },
         {
+            "Key": "8a4ae792-0c2a-4049-ac46-51a5a746782b",
+            "Value": {
+                "id": "3f958425-51d6-4cf9-bb1f-a8980abd65b5",
+                "resourcePath": "sprites\\spr_rook_ready\\spr_rook_ready.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8a6001ac-b7ae-4bea-94a7-6feb078ad4f4",
             "Value": {
                 "id": "2bbff24f-2a8f-43e1-b7b1-aae65d8c9f87",
@@ -636,6 +652,14 @@
                 "id": "5aa97804-4d12-4843-ad55-f29627fc2f7c",
                 "resourcePath": "views\\bfc2492f-9322-494b-86c2-8a47dd3014ba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c13dc25c-25db-4eb2-be2b-8d840e154415",
+            "Value": {
+                "id": "ed08e4d6-896f-4084-a0a2-d2b6e47042c8",
+                "resourcePath": "sprites\\spr_rook_hollow\\spr_rook_hollow.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
