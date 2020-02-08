@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "264f7441-9612-42cc-80e8-0c4ef4490234",
+            "Value": {
+                "id": "81e81cbf-c53d-4639-a7c0-5037ea0fea48",
+                "resourcePath": "scripts\\scr_lighting\\scr_lighting.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "26b112c7-a8c5-4cd8-b3d8-38f55cbc87ac",
             "Value": {
                 "id": "6f2176c8-2114-4e1f-ac12-49c919862e47",
@@ -569,7 +577,8 @@
     ],
     "script_order": [
         "40f6babc-1c83-4d5a-a944-efa66a0fc17e",
-        "36fffef3-6bab-406b-9daf-643d6c857e4b"
+        "36fffef3-6bab-406b-9daf-643d6c857e4b",
+        "264f7441-9612-42cc-80e8-0c4ef4490234"
     ],
     "tutorial": ""
 }
