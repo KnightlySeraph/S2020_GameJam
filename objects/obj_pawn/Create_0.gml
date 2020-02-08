@@ -1,4 +1,4 @@
-state = "IDLE"; //IDLE, WALK, ATTACK, DEAD, HOLLOW
+state = "WALK"; //IDLE, WALK, ATTACK, DEAD, HOLLOW
 
 current_sprite = sprite_index;
 
@@ -7,7 +7,7 @@ hsp = 0;
 vsp = 0;
 grav = 1;
 
-spd = 10;
+spd = 5;
 
 maxHealth = 100;
 currentHealth = maxHealth;
