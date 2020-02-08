@@ -1,5 +1,8 @@
 /// @description Insert description here
 
+//Mask
+mask_index = spr_player_bullet;
+
 if (moveTo) {
 	speed = b_speed;
 	direction = point_direction(x, y, locX, locY);
@@ -14,16 +17,6 @@ if (place_meeting(x, y, obj_solid)) {
 	scr_camShake(2, 15);
 	
 	instance_destroy();
-}
-
-// Shake on meeting enemy
-if (place_meeting(x, y, obj_enemy)) {
-	// Shake	
-	scr_camShake(2, 15);
-	
-	// Change Effect
-	sprite_index = spr_player_bullet_boom;
-	image_index = 0;
 }
 
 // Spawn Particles

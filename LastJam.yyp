@@ -287,10 +287,26 @@
             }
         },
         {
+            "Key": "65894f2e-d64b-4399-9508-9607b151781d",
+            "Value": {
+                "id": "9ee49a45-4903-4822-9410-5d461341da80",
+                "resourcePath": "sprites\\spr_knight_idle\\spr_knight_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6a4a8718-8648-4308-81a9-1cbb8e835d76",
             "Value": {
                 "id": "98bc8ccc-97e5-459e-bf3b-a80044961957",
                 "resourcePath": "views\\6a4a8718-8648-4308-81a9-1cbb8e835d76.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6b3f7e21-729b-4d93-8d8c-d1bf5514b457",
+            "Value": {
+                "id": "26a21341-60f4-4060-bba2-18de9ae19a9d",
+                "resourcePath": "views\\6b3f7e21-729b-4d93-8d8c-d1bf5514b457.yy",
                 "resourceType": "GMFolder"
             }
         },
