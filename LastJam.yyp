@@ -207,6 +207,22 @@
             }
         },
         {
+            "Key": "55f6b8ff-812b-4ac2-974e-8e490fc1ef86",
+            "Value": {
+                "id": "c725890e-6b71-49f0-87ac-960838f7500f",
+                "resourcePath": "sprites\\spr_player_jump_left\\spr_player_jump_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5752bc12-5f58-47fd-9aab-6511aec4975b",
+            "Value": {
+                "id": "ec19562c-e7ac-4cec-9450-4361da309219",
+                "resourcePath": "sprites\\spr_player_fall_left\\spr_player_fall_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59b6a180-b7fa-47da-931c-88ad08669ea4",
             "Value": {
                 "id": "0c1070c6-d362-47a5-9202-b5d724e6aac3",
