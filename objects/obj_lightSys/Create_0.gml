@@ -2,7 +2,7 @@
 cam_height = 1080;
 cam_width = 1920;
 surf = surface_create(8192, 8192);
-intensity = 0.8;
+intensity = 0.6;
 
 
 // Set surface target to the new surface
