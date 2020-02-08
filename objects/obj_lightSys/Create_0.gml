@@ -1,8 +1,8 @@
 /// @description Set up Surface Stuff
 cam_height = 1080;
 cam_width = 1920;
-surf = surface_create(cam_width, cam_height);
-intensity = 0.25;
+surf = surface_create(8192, 8192);
+intensity = 0.6;
 
 
 // Set surface target to the new surface
@@ -12,6 +12,7 @@ surface_set_target(surf);
 draw_clear_alpha(c_black, 0);
 
 
+// color = make_color_rgb(56, 45, 43);
 color = c_black;
 
 

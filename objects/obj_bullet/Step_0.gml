@@ -5,16 +5,18 @@ mask_index = spr_player_bullet;
 
 if (moveTo) {
 	speed = b_speed;
-	direction = point_direction(x, y, locX, locY);
+	direction = point_direction(x, y, locX, locY) + random_range(-3,3);
+	image_angle = direction;
 	moveTo = false;
 }
-
-image_angle = direction;
 
 // Delete on contact with solids
 if (place_meeting(x, y, obj_solid)) {
 	// Shake
 	scr_camShake(2, 15);
+	
+	// Play Sound
+	audio_play_sound(snd_bulletImpactWall, 0.6, false);
 	
 	instance_destroy();
 }

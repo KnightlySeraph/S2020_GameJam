@@ -66,7 +66,7 @@ if (keyboard_check(ord("S")) && place_meeting(x, y, obj_enemy)) {
 	// Screen dim
 	with (obj_lightSys) {
 		intensity += 0.01;	
-		intensity = clamp(intensity, 0.0, 0.6);
+		intensity = clamp(intensity, 0.0, 0.95);
 	}
 }
 else {
@@ -75,8 +75,10 @@ else {
 	suckShake = oriSuckShake;
 	// Make screen light
 	with (obj_lightSys) {
-		intensity -= 0.01;
-		intensity = clamp(intensity, 0.0, 1.0);
+		if (intensity > 0.6) {
+			intensity -= 0.01;
+			intensity = clamp(intensity, 0.0, 1.0);
+		}	
 	}
 }
 
@@ -169,6 +171,11 @@ if (move != 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
 	}
 	else if (move == -1) {
 		sprite_index = spr_player_walking_left;	
+	}
+	
+	// Play walk cycle sound
+	if (!audio_is_playing(snd_playerWalk)) {
+		audio_play_sound(snd_playerWalk, 1, false);	
 	}
 }
 
