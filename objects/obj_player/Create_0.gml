@@ -23,6 +23,8 @@ moving_left = false;
 
 // Other Gameplay Stuff
 hitpoints = 3;
+canSuck = false;
+sucking = false;
 
 // IFrames
 invinTime = 2;
@@ -30,3 +32,8 @@ flashSpeed = 0.15;
 flashOpacity = 0.5;
 flashColor = c_red;
 invin = false;
+
+// Sucking
+suckShake = 3;
+oriSuckShake = suckShake;
+suckShakeInc = 0.1;

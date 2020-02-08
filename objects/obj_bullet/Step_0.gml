@@ -17,3 +17,7 @@ if (place_meeting(x, y, obj_solid)) {
 }
 
 // Shake on meeting enemy
+if (place_meeting(x, y, obj_enemy)) {
+	// Shake	
+	scr_camShake(2, 15);
+}

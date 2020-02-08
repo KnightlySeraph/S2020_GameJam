@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "36fffef3-6bab-406b-9daf-643d6c857e4b",
+            "Value": {
+                "id": "46a4527d-7f74-470d-9e83-29ebf125a273",
+                "resourcePath": "scripts\\scr_cam_zoom\\scr_cam_zoom.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3e1f0cdc-7254-48fc-b067-7c432fe99ec3",
             "Value": {
                 "id": "dfd79af0-1ec7-4f21-90d4-d832e5ac8718",
@@ -496,7 +504,8 @@
         }
     ],
     "script_order": [
-        "40f6babc-1c83-4d5a-a944-efa66a0fc17e"
+        "40f6babc-1c83-4d5a-a944-efa66a0fc17e",
+        "36fffef3-6bab-406b-9daf-643d6c857e4b"
     ],
     "tutorial": ""
 }

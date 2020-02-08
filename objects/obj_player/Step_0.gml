@@ -46,6 +46,23 @@ if (vsp < termVel) {
 	vsp += mass;	
 }
 
+// Do the suck
+if (keyboard_check(ord("S")) && place_meeting(x, y, obj_enemy)) {
+	sucking = true;	
+	
+	// Begin a camera zoom
+	scr_cam_zoom(800, 3, 0.01, 0.01);
+	// Begin a screen shake
+	scr_camShake(suckShake, 30);
+	suckShake += suckShakeInc;
+	suckShake = clamp(suckShake, 0.0, 30);
+}
+else {
+	sucking = false;	
+	scr_cam_zoom(1080, 1, 0.1, 1);
+	suckShake = oriSuckShake;
+}
+
 // Collision
 //Horizontal Collision
 if (place_meeting(x + hsp, y, obj_solid)){
@@ -105,7 +122,7 @@ if (keyboard_check_pressed(ord("I"))) {
 
 // Animation Handler
 // Idling
-if (move == 0 && grounded && !mouse_check_button(mb_left)) {
+if (move == 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
 	if (moving_right) {
 		sprite_index = spr_player_idle_right;
 	}
@@ -115,7 +132,17 @@ if (move == 0 && grounded && !mouse_check_button(mb_left)) {
 }
 
 // Moving left or right and not firing
-if (move != 0 && grounded && !mouse_check_button(mb_left)) {
+if (move != 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
+	if (move == 1) {
+		sprite_index = spr_player_walking_right;	
+	}
+	else if (move == -1) {
+		sprite_index = spr_player_walking_left;	
+	}
+}
+
+// Sucking
+if (move == 0 && sucking && grounded) {
 	if (move == 1) {
 		sprite_index = spr_player_walking_right;	
 	}
