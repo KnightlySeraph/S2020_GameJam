@@ -15,3 +15,7 @@ is_firing = false;
 fire_rate = 0.1;
 projectile_speed = 15;
 fire_delay = false;
+
+// Other
+moving_right = true;
+moving_left = false;

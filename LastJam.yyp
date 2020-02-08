@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "2fc9a93a-23cc-4457-9571-a0fd727c323b",
+            "Value": {
+                "id": "ace1e736-e8c2-4b2e-adb6-07500cf87137",
+                "resourcePath": "sprites\\spr_player_idle_right\\spr_player_idle_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "336165b3-3a2c-4db3-8cdd-e77986a531e8",
             "Value": {
                 "id": "68b63a47-0655-47e6-a748-68ef31897c3d",
@@ -132,6 +140,14 @@
                 "id": "ed408596-c244-459f-8a68-3adb09d1d65a",
                 "resourcePath": "sprites\\spr_what\\spr_what.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "40f6babc-1c83-4d5a-a944-efa66a0fc17e",
+            "Value": {
+                "id": "27b849a2-cd0a-45b8-80e1-50119580b72a",
+                "resourcePath": "scripts\\scr_camShake\\scr_camShake.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -322,7 +338,7 @@
             "Key": "8cbcbc0e-4e8f-486d-9b5f-2b6c6d8e5c42",
             "Value": {
                 "id": "41637029-2fd3-4163-ac23-a4affeda236d",
-                "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
+                "resourcePath": "sprites\\spr_player_idle_left\\spr_player_idle_left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -380,6 +396,14 @@
                 "id": "5aa97804-4d12-4843-ad55-f29627fc2f7c",
                 "resourcePath": "views\\bfc2492f-9322-494b-86c2-8a47dd3014ba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c2974205-0c29-42a0-9d21-90cc2b00aa5b",
+            "Value": {
+                "id": "986d62de-13d7-487d-99f1-69244f5a77ed",
+                "resourcePath": "sprites\\spr_player_walking_left\\spr_player_walking_left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -461,10 +485,18 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "fe5b4f54-ba3d-4e6a-914b-516c8ce53237",
+            "Value": {
+                "id": "64557013-e46d-4572-bb8c-bbcd72dc7720",
+                "resourcePath": "sprites\\spr_player_walking_right\\spr_player_walking_right.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
-        
+        "40f6babc-1c83-4d5a-a944-efa66a0fc17e"
     ],
     "tutorial": ""
 }

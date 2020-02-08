@@ -1,5 +1,8 @@
 /// @description Movement and Physics
 
+// Collision mask
+mask_index = spr_player_idle_left;
+
 // Collect Input
 move = keyboard_check(ord("D")) + -keyboard_check(ord("A"));
 hsp = move * movementSpeed;
@@ -16,6 +19,16 @@ if (place_meeting(x, y + 1, obj_solid)) {
 }
 else {
 	grounded = false;	
+}
+
+// Check for last known direction
+if (move == 1) {
+	moving_right = true;
+	moving_left = false;
+}
+else if (move == -1) {
+	moving_right = false;
+	moving_left = true;
 }
 
 // Reset jumps
@@ -73,4 +86,25 @@ if (is_firing) {
 	alarm[0] = room_speed * fire_rate;
 	
 	is_firing = false;
+}
+
+// Animation Handler
+// Idling
+if (move == 0 && grounded && !mouse_check_button(mb_left)) {
+	if (moving_right) {
+		sprite_index = spr_player_idle_right;
+	}
+	else if (moving_left) {
+		sprite_index = spr_player_idle_left;
+	}
+}
+
+// Moving left or right and not firing
+if (move != 0 && grounded && !mouse_check_button(mb_left)) {
+	if (move == 1) {
+		sprite_index = spr_player_walking_right;	
+	}
+	else if (move == -1) {
+		sprite_index = spr_player_walking_left;	
+	}
 }
