@@ -17,6 +17,8 @@ alert_timer = 0;
 timer = 0;
 random_num = irandom_range(60,90);
 
+exclamation = false;
+
 hurt = false;
 
 ready = false;
