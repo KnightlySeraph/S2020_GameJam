@@ -7,7 +7,7 @@ jump = keyboard_check_pressed(vk_space);
 
 if (jump && jump > 0) {
 	vsp = -jumpForce;
-	jump--;
+	jump -= 1;
 }
 
 // Check for grounded
@@ -16,7 +16,6 @@ if (place_meeting(x, y + 1, obj_solid)) {
 }
 else {
 	grounded = false;	
-	show_debug_message("I am not grounded");
 }
 
 // Reset jumps
