@@ -22,6 +22,9 @@ if (surface_exists(surf)) {
 	with (obj_godrays) {
 		draw_sprite_ext(spr_godrays, 0, x, y, 0.25, 2, -30, make_color_rgb(229, 221, 100), 0.2);	
 	}
+	with (obj_candleLight) {
+		draw_sprite_ext(spr_lightSrc2, 0, x, y, 0.25 + random(0.025), 0.25 + random(0.025), 0, c_orange, 0.2);
+	}
 	gpu_set_blendmode(bm_normal);
 	
 	// Reset the alpha
