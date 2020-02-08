@@ -2,7 +2,7 @@
     "id": "18c9e7bc-3c31-4c2d-a8b8-f9ba9a3b1963",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_bad_alex",
+    "name": "obj_enemy",
     "eventList": [
         
     ],
