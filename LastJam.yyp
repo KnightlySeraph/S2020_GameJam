@@ -50,7 +50,7 @@
             "Key": "18c9e7bc-3c31-4c2d-a8b8-f9ba9a3b1963",
             "Value": {
                 "id": "ae103982-36b9-4076-9281-69fa5a277c4a",
-                "resourcePath": "objects\\obj_bad_alex\\obj_bad_alex.yy",
+                "resourcePath": "objects\\obj_enemy\\obj_enemy.yy",
                 "resourceType": "GMObject"
             }
         },

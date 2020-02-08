@@ -47,12 +47,15 @@ switch(state) {
 		break;
 		
 	case "DEATH":
+		if(!ready) sprite_index = spr_pawn_death;
+		else sprite_index = spr_pawn_ready;
 		break;
 		
 	case "HOLLOW":
 		break;
 }
 
+if(currentHealth <= 0 && !ready) state = "DEATH";
 
 if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player.x - x) == -direct) {
 	alert = true;
