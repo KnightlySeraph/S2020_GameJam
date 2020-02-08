@@ -1,5 +1,10 @@
 /// @description Movement and Physics
 
+// Debug Block
+if (keyboard_check_pressed(ord("T"))) {
+	show_debug_message("Invin is " + string(invin));	
+}
+
 // Collision mask
 mask_index = spr_player_idle_left;
 
@@ -86,6 +91,16 @@ if (is_firing) {
 	alarm[0] = room_speed * fire_rate;
 	
 	is_firing = false;
+}
+
+// Invincibility Frames
+if (invin) {
+	if (alarm[1] < 0) alarm[1] = room_speed * flashSpeed;
+	if (alarm[2] < 0) alarm[2] = room_speed * invinTime;
+}
+// Debug for IFrames
+if (keyboard_check_pressed(ord("I"))) {
+	invin = true;	
 }
 
 // Animation Handler

@@ -19,3 +19,14 @@ fire_delay = false;
 // Other
 moving_right = true;
 moving_left = false;
+
+
+// Other Gameplay Stuff
+hitpoints = 3;
+
+// IFrames
+invinTime = 2;
+flashSpeed = 0.15;
+flashOpacity = 0.5;
+flashColor = c_red;
+invin = false;
