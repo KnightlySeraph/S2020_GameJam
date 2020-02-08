@@ -69,6 +69,7 @@ if(currentHealth <= 0 && !ready) {
 		direct = -direct;
 	}
 }
+if(hollow) state = "HOLLOW";
 
 if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player.x - x) == -direct) {
 	alert = true;
@@ -95,6 +96,7 @@ else image_alpha = 1;
 
 vsp += grav;
 
+if(currentHealth > 0) {
 if(place_meeting(x+hsp,y, obj_solid)) {
 	while(!place_meeting(x+sign(hsp),y, obj_solid)) {
 		x += sign(hsp);
@@ -107,6 +109,7 @@ else if(!place_meeting(x + (sign(hsp) * 45), y + 1, obj_solid)) {
 	if(!alert) direct = -direct;
 	else state = "IDLE"
 }
+}
 
 if(place_meeting(x,y+vsp, obj_solid)) {
 	while(!place_meeting(x,y+sign(vsp), obj_solid)) {
@@ -114,6 +117,7 @@ if(place_meeting(x,y+vsp, obj_solid)) {
 	}
 	vsp = 0;
 }
+
 
 x+=hsp;
 y+=vsp;

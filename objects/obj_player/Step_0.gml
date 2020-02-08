@@ -54,23 +54,58 @@ if (vsp < termVel) {
 }
 
 // Do the suck
-if (keyboard_check(ord("S")) && place_meeting(x, y, obj_enemy)) {
-	sucking = true;	
+if (keyboard_check(ord("S")) && place_meeting(x, y, obj_enemy) && grounded) {
+	if(suckEnemy != noone) {
+		if(suckEnemy.ready && !suckEnemy.hollow && abs(suckEnemy.suck_x - x) > 192) {
+			if(sign(suckEnemy.suck_x - x) == 1) {
+				moving_right = true; 
+				moving_left = false;
+			}
+			else {
+				moving_left = true; 
+				moving_right = false;
+			}
+			sucking = true;
+			if(sprite_index != spr_player_feast_left && sprite_index != spr_player_feast_right) image_index = 0;
 	
-	// Begin a camera zoom
-	scr_cam_zoom(800, 3, 0.01, 0.01);
-	// Begin a screen shake
-	scr_camShake(suckShake, 30);
-	suckShake += suckShakeInc;
-	suckShake = clamp(suckShake, 0.0, 30);
-	// Screen dim
-	with (obj_lightSys) {
-		intensity += 0.01;	
-		intensity = clamp(intensity, 0.0, 0.95);
+			// Begin a camera zoom
+			scr_cam_zoom(800, 3, 0.01, 0.01);
+			// Begin a screen shake
+			scr_camShake(suckShake, 30);
+			suckShake += suckShakeInc;
+			suckShake = clamp(suckShake, 0.0, 30);
+			// Screen dim
+			with (obj_lightSys) {
+				intensity += 0.01;	
+				intensity = clamp(intensity, 0.0, 0.95);
+			}
+		}
+		else {
+			sucking = false;
+			scr_cam_zoom(1080, 1, 0.1, 1);
+			suckShake = oriSuckShake;
+			// Make screen light
+			with (obj_lightSys) {
+				if (intensity > 0.6) {
+					intensity -= 0.01;
+					intensity = clamp(intensity, 0.0, 1.0);
+				}	
+			}
+			var direct = -sign(suckEnemy.suck_x - x);
+			hsp = direct * movementSpeed;
+			var temp_x = x;
+			var temp_collide = false;
+			while(abs(suckEnemy.suck_x - temp_x) < 192) {
+				temp_x += hsp;
+				if(place_meeting(temp_x,y,obj_solid)) temp_collide = true;
+			}
+			if(temp_collide) hsp = -hsp;
+		}
 	}
 }
 else {
-	sucking = false;	
+	sucking = false;
+	suckEnemy = noone;
 	scr_cam_zoom(1080, 1, 0.1, 1);
 	suckShake = oriSuckShake;
 	// Make screen light

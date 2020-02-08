@@ -1,5 +1,5 @@
 if(state != "DEATH" && state != "HOLLOW") mask_index = spr_rook_idle;
-//else mask_index = spr_pawn_ready;
+else mask_index = spr_rook_ready;
 
 switch(state) {
 	case "IDLE":
@@ -27,6 +27,7 @@ switch(state) {
 }
 
 if(currentHealth <= 0 && !ready) state = "DEATH";
+if(hollow) state = "HOLLOW";
 
 if(abs(point_distance(x,y,obj_player.x,obj_player.y) < 800) && !collision_line(x,y,obj_player.x,obj_player.y,obj_solid,true,true)) {
 	alert = true;

@@ -9,7 +9,7 @@ grav = 1;
 
 spd = 3;
 
-maxHealth = 50;
+maxHealth = 5;
 currentHealth = maxHealth;
 
 alert = false;
@@ -25,3 +25,4 @@ ready = false;
 hollow = false;
 
 suck_x = x;
+dark_alpha = 0;

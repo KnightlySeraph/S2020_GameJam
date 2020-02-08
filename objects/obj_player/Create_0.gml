@@ -26,6 +26,7 @@ hitpoints = 7;
 hurt = false;
 canSuck = false;
 sucking = false;
+suckEnemy = noone;
 
 // IFrames
 invinTime = 2;
