@@ -18,10 +18,11 @@ switch(state) {
 		
 	case "DEATH":
 		if(!ready) sprite_index = spr_rook_death;
-		else image_index = 15;
+		else sprite_index = spr_rook_ready
 		break;
 		
 	case "HOLLOW":
+		sprite_index = spr_rook_hollow;
 		break;
 }
 
