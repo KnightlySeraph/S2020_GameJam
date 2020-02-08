@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1c2e2fea-b217-4ab2-b223-389ae640c393",
+            "Value": {
+                "id": "4a2a7d47-9775-47a8-9e03-c98f96628091",
+                "resourcePath": "sprites\\spr_bishop_crouch\\spr_bishop_crouch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cf257d8-a95c-4ddf-9438-aa1a56877c56",
             "Value": {
                 "id": "39ad83de-f21d-42e7-abfa-a9983640598d",
@@ -371,6 +379,14 @@
             "Value": {
                 "id": "9ee49a45-4903-4822-9410-5d461341da80",
                 "resourcePath": "sprites\\spr_knight_idle\\spr_knight_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "67144326-a4bb-44ed-8f51-e7df0cdd224f",
+            "Value": {
+                "id": "9370e494-770a-4ce3-aa7c-b368cd68c734",
+                "resourcePath": "sprites\\spr_bishop_drill\\spr_bishop_drill.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -732,6 +748,14 @@
                 "id": "a139d574-3e41-4d78-af86-33315831d8f6",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d5513fed-d3eb-462a-b0ab-86541f888ced",
+            "Value": {
+                "id": "88cc5e2a-93d5-492e-af2d-806e1692d4aa",
+                "resourcePath": "sprites\\spr_bishop_rise\\spr_bishop_rise.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
