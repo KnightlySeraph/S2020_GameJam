@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "c2974205-0c29-42a0-9d21-90cc2b00aa5b",
+            "Value": {
+                "id": "986d62de-13d7-487d-99f1-69244f5a77ed",
+                "resourcePath": "sprites\\spr_player_walking_left\\spr_player_walking_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2b0efe4-fd9f-4f35-9a60-be22af791e6d",
             "Value": {
                 "id": "e2b96b72-9e6e-430b-b116-66b8d4adcc04",
