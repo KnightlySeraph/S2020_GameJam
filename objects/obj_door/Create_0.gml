@@ -3,3 +3,5 @@
 image_speed = 0;
 
 open = false;
+
+numEnemies = instance_number(obj_enemy);
