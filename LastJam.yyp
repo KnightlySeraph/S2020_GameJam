@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "82e6b9b2-cca4-4d95-a2e0-2034506c55eb",
+            "Value": {
+                "id": "1ff4242f-a60a-4ed7-aa3e-870f01f0ac9e",
+                "resourcePath": "sprites\\spr_queen_attack_right\\spr_queen_attack_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "85d81224-c392-4e67-b0ab-38bd2504ee1e",
             "Value": {
                 "id": "f58473f5-523a-4559-8bb7-e8592b660c34",
