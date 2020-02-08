@@ -5,7 +5,8 @@
     "name": "07c1e82d-b81b-46ca-a383-bb81f81b15a7",
     "children": [
         "777a6d7a-73f6-459b-b8ab-322476fb0d00",
-        "e2a11690-5a44-42a1-9006-8683793fbccb"
+        "e2a11690-5a44-42a1-9006-8683793fbccb",
+        "82e6b9b2-cca4-4d95-a2e0-2034506c55eb"
     ],
     "filterType": "GMSprite",
     "folderName": "Queen",
