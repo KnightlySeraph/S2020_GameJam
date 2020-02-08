@@ -59,6 +59,7 @@ switch(state) {
 		break;
 		
 	case "HOLLOW":
+		sprite_index = spr_pawn_hollow;
 		break;
 }
 
