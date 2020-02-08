@@ -103,6 +103,22 @@
             }
         },
         {
+            "Key": "33f85dd7-20f0-41bc-8bf2-62d663439986",
+            "Value": {
+                "id": "5e80f4b5-a56e-4e2a-a7a0-417d5c717724",
+                "resourcePath": "views\\33f85dd7-20f0-41bc-8bf2-62d663439986.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "36a115a1-9a20-46a7-a880-676af473f745",
+            "Value": {
+                "id": "42419287-7aef-4580-b124-2f53355ea777",
+                "resourcePath": "sprites\\spr_bishop_teleport_first\\spr_bishop_teleport_first.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e1f0cdc-7254-48fc-b067-7c432fe99ec3",
             "Value": {
                 "id": "dfd79af0-1ec7-4f21-90d4-d832e5ac8718",
@@ -151,6 +167,14 @@
             }
         },
         {
+            "Key": "4eb79f27-db62-49b3-8e39-9e250968a319",
+            "Value": {
+                "id": "4f8d79cc-344d-40cd-b88b-b91700368bf0",
+                "resourcePath": "sprites\\spr_tileset0\\spr_tileset0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59b6a180-b7fa-47da-931c-88ad08669ea4",
             "Value": {
                 "id": "0c1070c6-d362-47a5-9202-b5d724e6aac3",
@@ -175,19 +199,11 @@
             }
         },
         {
-            "Key": "667b8a85-8954-4896-96a7-892f3ae92ca7",
+            "Key": "61f83002-8995-424c-92d3-a57169f46205",
             "Value": {
-                "id": "e5172a78-2d4a-44de-b8a3-1c91e2262114",
-                "resourcePath": "sprites\\spr_bishop_teleport_first\\spr_bishop_teleport_first.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "67081824-5ed2-4279-9558-7d2931603485",
-            "Value": {
-                "id": "9c4ec5b2-86e4-4e27-b52e-a0ff4889e777",
-                "resourcePath": "views\\67081824-5ed2-4279-9558-7d2931603485.yy",
-                "resourceType": "GMFolder"
+                "id": "32565364-8d48-4ebf-8752-6b2594a2861c",
+                "resourcePath": "tilesets\\tls_main\\tls_main.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -239,10 +255,10 @@
             }
         },
         {
-            "Key": "76f5ae8c-119d-4182-8aec-5c16f856139b",
+            "Key": "797fb5ea-7355-4c77-805c-5f3a1bc1e3d4",
             "Value": {
-                "id": "b5147d5a-8a26-4e65-9b74-65d469c62e98",
-                "resourcePath": "views\\76f5ae8c-119d-4182-8aec-5c16f856139b.yy",
+                "id": "9d095b90-21ab-4403-a503-0d74810470f7",
+                "resourcePath": "views\\797fb5ea-7355-4c77-805c-5f3a1bc1e3d4.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -311,10 +327,26 @@
             }
         },
         {
+            "Key": "9de9f37d-e134-44c6-8243-f48ade44d717",
+            "Value": {
+                "id": "27517f36-dd2e-4e93-87f0-12c585be025d",
+                "resourcePath": "sprites\\spr_bishop_teleport_second\\spr_bishop_teleport_second.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9eb4dc3c-6970-4753-88c2-41ec39302545",
             "Value": {
                 "id": "07b4c514-b32f-4082-9c7f-0548e01c35b5",
                 "resourcePath": "views\\9eb4dc3c-6970-4753-88c2-41ec39302545.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a8257143-e8fa-44c4-8ac6-c4389ffd29ae",
+            "Value": {
+                "id": "3c707ed2-0434-4181-890e-10359055ce19",
+                "resourcePath": "views\\a8257143-e8fa-44c4-8ac6-c4389ffd29ae.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -356,14 +388,6 @@
                 "id": "e2b96b72-9e6e-430b-b116-66b8d4adcc04",
                 "resourcePath": "objects\\obj_camera\\obj_camera.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "c7e1fd37-0103-4db0-95df-8ae32e80774f",
-            "Value": {
-                "id": "eafd6874-945e-475c-89dc-b04d2193a8ac",
-                "resourcePath": "sprites\\spr_bishop_teleport_second\\spr_bishop_teleport_second.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
