@@ -6,7 +6,9 @@
     "children": [
         "8c9c3beb-d006-49df-8d5b-80c23f1a34d7",
         "a686708d-43f5-48b9-b2ef-ceb9bf794892",
-        "40181e86-1077-4a5b-812a-dfe8ce715623"
+        "40181e86-1077-4a5b-812a-dfe8ce715623",
+        "1f254428-bd99-4051-9126-e8410216d3cc",
+        "6d38c7f9-7d69-4cde-bca8-48e0836912bd"
     ],
     "filterType": "GMSound",
     "folderName": "Player FX",
