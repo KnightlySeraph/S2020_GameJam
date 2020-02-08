@@ -4,4 +4,5 @@ alert = false;
 alert_timer = 0;
 ready = false;
 hollow = false;
-state = "NONE"
+state = "NONE";
+suck_x = x;

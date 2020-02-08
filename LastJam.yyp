@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1c2e2fea-b217-4ab2-b223-389ae640c393",
+            "Value": {
+                "id": "4a2a7d47-9775-47a8-9e03-c98f96628091",
+                "resourcePath": "sprites\\spr_bishop_crouch\\spr_bishop_crouch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cf257d8-a95c-4ddf-9438-aa1a56877c56",
             "Value": {
                 "id": "39ad83de-f21d-42e7-abfa-a9983640598d",
@@ -108,14 +116,6 @@
                 "id": "08e567b0-ed33-46c4-be33-a64f3c165759",
                 "resourcePath": "objects\\obj_lightSrc\\obj_lightSrc.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "1f254428-bd99-4051-9126-e8410216d3cc",
-            "Value": {
-                "id": "26657a7a-2dee-469c-a123-681926c9aec3",
-                "resourcePath": "sounds\\snd_suck\\snd_suck.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "67144326-a4bb-44ed-8f51-e7df0cdd224f",
+            "Value": {
+                "id": "9370e494-770a-4ce3-aa7c-b368cd68c734",
+                "resourcePath": "sprites\\spr_bishop_drill\\spr_bishop_drill.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "68b3c844-4d05-40a1-bf47-f61216b6eac5",
             "Value": {
                 "id": "f8681948-53c1-44b3-86c4-69895970aa05",
@@ -420,14 +428,6 @@
                 "id": "8294bb00-f4fc-49f8-a815-353ca355ee49",
                 "resourcePath": "sprites\\spr_lightSrc2\\spr_lightSrc2.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6d38c7f9-7d69-4cde-bca8-48e0836912bd",
-            "Value": {
-                "id": "3529e39c-9e92-402e-88dd-67e750894730",
-                "resourcePath": "sounds\\snd_firing\\snd_firing.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -751,11 +751,11 @@
             }
         },
         {
-            "Key": "cd357679-a1ad-458d-95b2-39bb74c8ca74",
+            "Key": "d5513fed-d3eb-462a-b0ab-86541f888ced",
             "Value": {
-                "id": "8e9b9063-dcfd-45d2-98bc-f36f4b810317",
-                "resourcePath": "rooms\\level1\\level1.yy",
-                "resourceType": "GMRoom"
+                "id": "88cc5e2a-93d5-492e-af2d-806e1692d4aa",
+                "resourcePath": "sprites\\spr_bishop_rise\\spr_bishop_rise.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
