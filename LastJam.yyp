@@ -162,7 +162,7 @@
             "Key": "4cabcd37-056d-4219-99d5-2f9446a84410",
             "Value": {
                 "id": "6792bb7e-ff3e-4305-a0c8-61b1fc844c25",
-                "resourcePath": "sprites\\spr_player_shoot_idle\\spr_player_shoot_idle.yy",
+                "resourcePath": "sprites\\spr_player_shoot_idle_left\\spr_player_shoot_idle_left.yy",
                 "resourceType": "GMSprite"
             }
         },
