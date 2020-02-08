@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "ead45c92-a65c-4612-866d-0793a78d09ca",
+            "Value": {
+                "id": "4c79264a-a308-452b-bd1c-b8108398442a",
+                "resourcePath": "sprites\\spr_player_shoot_idle_right\\spr_player_shoot_idle_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eee197d4-b60e-49fd-85ba-5eab2400c199",
             "Value": {
                 "id": "11c241d3-87d6-4c90-aef4-8a9287698990",

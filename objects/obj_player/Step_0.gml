@@ -150,3 +150,13 @@ if (move == 0 && sucking && grounded) {
 		sprite_index = spr_player_feast_left;	
 	}
 }
+
+// Shooting, idle
+if (move == 0 && grounded && mouse_check_button(mb_left)) {
+	if (moving_right) {
+		sprite_index = spr_player_shoot_idle_right;	
+	}
+	else if (moving_left) {
+		sprite_index = spr_player_shoot_idle_left;	
+	}
+}
