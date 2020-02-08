@@ -2,9 +2,18 @@
     "id": "18c9e7bc-3c31-4c2d-a8b8-f9ba9a3b1963",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_bad_alex",
+    "name": "obj_enemy",
     "eventList": [
-        
+        {
+            "id": "9df42534-cea3-4533-9eaa-fec7c5ce648d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "18c9e7bc-3c31-4c2d-a8b8-f9ba9a3b1963"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

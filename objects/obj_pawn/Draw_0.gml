@@ -1,2 +1,2 @@
 draw_self();
-draw_text(x,y,alert);
+draw_text(x,y,currentHealth);

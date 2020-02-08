@@ -15,3 +15,25 @@ is_firing = false;
 fire_rate = 0.1;
 projectile_speed = 15;
 fire_delay = false;
+
+// Other
+moving_right = true;
+moving_left = false;
+
+
+// Other Gameplay Stuff
+hitpoints = 3;
+canSuck = false;
+sucking = false;
+
+// IFrames
+invinTime = 2;
+flashSpeed = 0.15;
+flashOpacity = 0.5;
+flashColor = c_red;
+invin = false;
+
+// Sucking
+suckShake = 3;
+oriSuckShake = suckShake;
+suckShakeInc = 0.1;
