@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "c526a607-fb66-409d-84c7-fe8fef813643",
+            "Value": {
+                "id": "63380de9-2c38-4c29-a369-590549f52bbf",
+                "resourcePath": "objects\\obj_lightSrc\\obj_lightSrc.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cb12e5af-f4b5-4a86-b18d-9e9604fb1410",
             "Value": {
                 "id": "01028f73-9e44-4eb9-ba93-3f6b94cb428e",

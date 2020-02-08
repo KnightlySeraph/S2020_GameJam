@@ -8,13 +8,14 @@ if (surface_exists(surf)) {
 	
 	// Check the view and draw the surface at x,y
 	if (view_current == 0) {
-		draw_surface(surf, obj_camera.x - (cam_width / 2), obj_camera.y - (cam_height / 2));	
+		//draw_surface(surf, obj_camera.x - (cam_width / 2), obj_camera.y - (cam_height / 2));	
+		draw_surface(surf, 0, 0);	
 	}
 }
 
 else {
 	// Run the create again if the surface isn't detected
-	surf = surface_create(cam_width, cam_height);
+	surf = surface_create(8192, 8192);
 	surface_set_target(surf);
 	draw_clear_alpha(c_black, 0);
 	surface_reset_target();	
