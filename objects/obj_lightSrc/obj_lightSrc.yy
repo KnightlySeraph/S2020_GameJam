@@ -1,5 +1,5 @@
 {
-    "id": "c526a607-fb66-409d-84c7-fe8fef813643",
+    "id": "1e477138-f41b-4a4b-a932-d2bdabd2ea30",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_lightSrc",

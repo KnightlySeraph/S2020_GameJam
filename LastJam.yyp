@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "1e477138-f41b-4a4b-a932-d2bdabd2ea30",
+            "Value": {
+                "id": "08e567b0-ed33-46c4-be33-a64f3c165759",
+                "resourcePath": "objects\\obj_lightSrc\\obj_lightSrc.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24db1038-4f79-41c4-a67b-d16977e14917",
             "Value": {
                 "id": "dd66c93d-c6ae-4e99-ae6e-18493e493923",
@@ -179,6 +187,14 @@
             "Value": {
                 "id": "3f34d702-5337-4e9e-b7f3-de4a636311f2",
                 "resourcePath": "views\\3ae0a3c7-5524-4281-ac76-4e9d0ad22ba4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3e1654a7-529b-4e52-83fe-5ea7bac971c7",
+            "Value": {
+                "id": "bf86a9de-5d48-41a7-974c-d7417316394b",
+                "resourcePath": "views\\3e1654a7-529b-4e52-83fe-5ea7bac971c7.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -475,6 +491,14 @@
             "Value": {
                 "id": "c03ac85e-f60f-41a6-9ddd-4b4ac5baf7ae",
                 "resourcePath": "sprites\\spr_pawn_walk\\spr_pawn_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89c9208a-6f75-43f4-a352-fa040e85086b",
+            "Value": {
+                "id": "685374f1-eb07-4c73-bf50-ff7d2cbcc1f4",
+                "resourcePath": "sprites\\spr_lightSrc\\spr_lightSrc.yy",
                 "resourceType": "GMSprite"
             }
         },
