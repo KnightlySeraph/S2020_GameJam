@@ -18,6 +18,16 @@ else {
 	grounded = false;	
 }
 
+// Check for last known direction
+if (move == 1) {
+	moving_right = true;
+	moving_left = false;
+}
+else if (move == -1) {
+	moving_right = false;
+	moving_left = true;
+}
+
 // Reset jumps
 if (grounded) {
 	jumps = maxJumps;
@@ -73,4 +83,15 @@ if (is_firing) {
 	alarm[0] = room_speed * fire_rate;
 	
 	is_firing = false;
+}
+
+// Animation Handler
+// Idling
+if (move == 0 && grounded && !mouse_check_button(mb_left)) {
+	if (moving_right) {
+		sprite_index = spr_player_idle_right;
+	}
+	else if (moving_left) {
+		sprite_index = spr_player_idle_left;
+	}
 }
