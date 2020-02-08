@@ -143,10 +143,20 @@ if (move != 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
 
 // Sucking
 if (move == 0 && sucking && grounded) {
-	if (move == 1) {
-		sprite_index = spr_player_walking_right;	
+	if (moving_right) {
+		sprite_index = spr_player_feast_right;	
 	}
-	else if (move == -1) {
-		sprite_index = spr_player_walking_left;	
+	else if (moving_left) {
+		sprite_index = spr_player_feast_left;	
+	}
+}
+
+// Shooting, idle
+if (move == 0 && grounded && mouse_check_button(mb_left)) {
+	if (moving_right) {
+		sprite_index = spr_player_shoot_idle_right;	
+	}
+	else if (moving_left) {
+		sprite_index = spr_player_shoot_idle_left;	
 	}
 }
