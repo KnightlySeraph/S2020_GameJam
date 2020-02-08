@@ -66,7 +66,7 @@ if (keyboard_check(ord("S")) && place_meeting(x, y, obj_enemy)) {
 	// Screen dim
 	with (obj_lightSys) {
 		intensity += 0.01;	
-		intensity = clamp(intensity, 0.0, 0.6);
+		intensity = clamp(intensity, 0.0, 0.95);
 	}
 }
 else {
@@ -74,10 +74,12 @@ else {
 	scr_cam_zoom(1080, 1, 0.1, 1);
 	suckShake = oriSuckShake;
 	// Make screen light
-	/*with (obj_lightSys) {
-		intensity -= 0.01;
-		intensity = clamp(intensity, 0.0, 1.0);
-	}*/
+	with (obj_lightSys) {
+		if (intensity > 0.6) {
+			intensity -= 0.01;
+			intensity = clamp(intensity, 0.0, 1.0);
+		}	
+	}
 }
 
 // Collision
