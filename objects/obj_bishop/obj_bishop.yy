@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_bishop",
     "eventList": [
-        
+        {
+            "id": "a4728ced-7233-48e5-a582-01c3693171a4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "e2775ec5-25c1-4eed-a4ef-8f6ce5274565"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -28,7 +28,7 @@ switch(state) {
 
 if(currentHealth <= 0 && !ready) state = "DEATH";
 
-if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192) {
+if(abs(point_distance(x,y,obj_player.x,obj_player.y) < 800) && !collision_line(x,y,obj_player.x,obj_player.y,obj_solid,true,true)) {
 	alert = true;
 	alert_timer = 0;
 }
