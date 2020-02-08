@@ -19,6 +19,11 @@ switch(state) {
 				state = "WALK";
 				timer = 0;
 			}
+			if(abs(x-obj_player.x) < 96) {
+				state = "ATTACK";
+				hsp = 0;
+				timer = 0;
+			}
 		}
 		
 		break;
@@ -81,7 +86,9 @@ if(place_meeting(x+hsp,y, obj_solid)) {
 	direct = -direct;
 }
 else if(!place_meeting(x + (sign(hsp) * 45), y + 1, obj_solid)) {
-	direct = -direct;
+	hsp = 0;
+	if(!alert) direct = -direct;
+	else state = "IDLE"
 }
 
 if(place_meeting(x,y+vsp, obj_solid)) {
