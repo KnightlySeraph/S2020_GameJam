@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "00c2e5a9-f8d1-4f5e-88de-2ec42d307be1",
+            "Value": {
+                "id": "c772a5ec-a84f-4679-865f-c74612875847",
+                "resourcePath": "sprites\\spr_lightSrc1\\spr_lightSrc1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "00dfa819-497d-4f68-a987-c8faab1c462f",
             "Value": {
                 "id": "28724213-3daf-4473-a2bd-6851fec6ed23",
@@ -55,10 +63,26 @@
             }
         },
         {
+            "Key": "0e220ca6-d9d3-4b29-b8cb-e2f01ba619fe",
+            "Value": {
+                "id": "a6d68754-1d23-47ef-a138-73c68dcc0233",
+                "resourcePath": "objects\\obj_lightSrc1\\obj_lightSrc1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "18c9e7bc-3c31-4c2d-a8b8-f9ba9a3b1963",
             "Value": {
                 "id": "ae103982-36b9-4076-9281-69fa5a277c4a",
                 "resourcePath": "objects\\obj_enemy\\obj_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1a1b9ce9-ddba-44ae-b740-a3a10d4509aa",
+            "Value": {
+                "id": "fddec2e4-2a28-4957-84c5-40257f4f9219",
+                "resourcePath": "objects\\obj_lightSys2\\obj_lightSys2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -564,6 +588,14 @@
                 "id": "a139d574-3e41-4d78-af86-33315831d8f6",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d71b3e0a-7031-430c-aa82-c453a2dddd2d",
+            "Value": {
+                "id": "e519c184-4220-4aef-a71e-ee6b7495176f",
+                "resourcePath": "views\\d71b3e0a-7031-430c-aa82-c453a2dddd2d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

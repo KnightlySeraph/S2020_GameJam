@@ -14,8 +14,17 @@ if (surface_exists(surf)) {
 	// draw_rectangle(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), camera_get_view_x(view_camera[0]) + cam_width, camera_get_view_y(view_camera[0]) + cam_height, 0);
 	draw_rectangle(0, 0, cam_width, cam_height, 0);
 	
+	// Set up light sources
+	gpu_set_blendenable(bm_subtract);
+	with (obj_lightSrc1) {
+		draw_sprite_ext(spr_lightSrc1, 0, x - 0, y - 0, 0.5 + random(0.05), 0.5 + random(0.05), 0, c_white, 1);	
+	}
+	gpu_set_blendmode(bm_normal);
+	
 	// Reset the alpha
 	draw_set_alpha(1.0);
+	
+	
 	
 	// Reset the target
 	surface_reset_target();
