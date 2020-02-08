@@ -1,8 +1,8 @@
 /// @description Set up Surface Stuff
 cam_height = 1080;
 cam_width = 1920;
-surf = surface_create(cam_width, cam_height);
-intensity = 0.25;
+surf = surface_create(8192, 8192);
+intensity = 0.8;
 
 
 // Set surface target to the new surface
