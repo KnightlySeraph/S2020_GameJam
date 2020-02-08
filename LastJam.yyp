@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "2300a394-68f7-4aae-95c1-edff932473e4",
+            "Value": {
+                "id": "753a80a5-9c12-409b-94a7-3e25984fd5fc",
+                "resourcePath": "views\\2300a394-68f7-4aae-95c1-edff932473e4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "24db1038-4f79-41c4-a67b-d16977e14917",
             "Value": {
                 "id": "dd66c93d-c6ae-4e99-ae6e-18493e493923",
@@ -567,6 +575,14 @@
             }
         },
         {
+            "Key": "8312e08d-cff2-431a-af15-6b69f47963c4",
+            "Value": {
+                "id": "9408035a-fc34-4956-ac54-97ff8bd31db0",
+                "resourcePath": "objects\\obj_door\\obj_door.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "85d81224-c392-4e67-b0ab-38bd2504ee1e",
             "Value": {
                 "id": "f58473f5-523a-4559-8bb7-e8592b660c34",
@@ -652,6 +668,14 @@
                 "id": "3a133c2e-df1a-4a4c-b876-3feb5fda7823",
                 "resourcePath": "objects\\obj_knight\\obj_knight.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9b00aeee-208e-4627-a753-f6aa573ef7f2",
+            "Value": {
+                "id": "8c6d902f-c5b9-4562-b50d-4a683c563014",
+                "resourcePath": "sprites\\spr_completeDoor\\spr_completeDoor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
