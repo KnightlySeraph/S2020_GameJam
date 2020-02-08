@@ -187,6 +187,11 @@ if (move == 0 && sucking && grounded) {
 	else if (moving_left) {
 		sprite_index = spr_player_feast_left;	
 	}
+	
+	// Play suck sound
+	if (!audio_is_playing(snd_suck)) {
+		audio_play_sound(snd_suck, 0.8, false);	
+	}
 }
 
 // Shooting, idle
@@ -197,6 +202,10 @@ if (move == 0 && grounded && mouse_check_button(mb_left)) {
 	else if (moving_left) {
 		sprite_index = spr_player_shoot_idle_left;	
 	}
+	 // Play shooting sound
+	 if (!audio_is_playing(snd_firing)) {
+		 audio_play_sound(snd_firing, 0.4, false);
+	 }
 }
 
 // Falling Animation

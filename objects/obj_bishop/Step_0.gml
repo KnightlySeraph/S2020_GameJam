@@ -1,5 +1,5 @@
-if(state != "DEATH" && state != "HOLLOW") mask_index = spr_pawn_idle;
-else mask_index = spr_pawn_ready;
+if(state != "DEATH" && state != "HOLLOW") mask_index = spr_bishop_idle;
+//else mask_index = spr_pawn_ready;
 
 switch(state) {
 	case "IDLE":

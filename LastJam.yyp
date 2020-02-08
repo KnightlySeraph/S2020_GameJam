@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1004a27d-84a0-4029-ad6f-1bf7bea12543",
+            "Value": {
+                "id": "c6151e6a-ffb5-4fe2-8568-050bfbbb6e55",
+                "resourcePath": "sounds\\snd_firing\\snd_firing.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "10bef08d-a27b-418b-bb79-5a4096b34b98",
             "Value": {
                 "id": "40baf28a-da1c-4e6c-8829-0e308ecaddd3",
@@ -76,6 +84,14 @@
                 "id": "ae103982-36b9-4076-9281-69fa5a277c4a",
                 "resourcePath": "objects\\obj_enemy\\obj_enemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1c2e2fea-b217-4ab2-b223-389ae640c393",
+            "Value": {
+                "id": "4a2a7d47-9775-47a8-9e03-c98f96628091",
+                "resourcePath": "sprites\\spr_bishop_crouch\\spr_bishop_crouch.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -108,6 +124,14 @@
                 "id": "08e567b0-ed33-46c4-be33-a64f3c165759",
                 "resourcePath": "objects\\obj_lightSrc\\obj_lightSrc.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "21ffc2a1-e697-4719-a8e2-3b94b2c45d24",
+            "Value": {
+                "id": "334a673d-7a9b-489c-a516-1250735cbbf4",
+                "resourcePath": "rooms\\Level1\\Level1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -195,6 +219,14 @@
             "Value": {
                 "id": "3f34d702-5337-4e9e-b7f3-de4a636311f2",
                 "resourcePath": "views\\3ae0a3c7-5524-4281-ac76-4e9d0ad22ba4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3d18faeb-4df1-4f40-a900-d8ca5cbf087e",
+            "Value": {
+                "id": "98c7dc2a-33db-45ca-923b-1a3742b7574a",
+                "resourcePath": "views\\3d18faeb-4df1-4f40-a900-d8ca5cbf087e.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -327,6 +359,14 @@
             }
         },
         {
+            "Key": "58b6c734-26d7-40ee-98bc-c1c755b42da3",
+            "Value": {
+                "id": "50ba71ad-567e-47f5-a6f8-5fc3520042b4",
+                "resourcePath": "sounds\\snd_suck\\snd_suck.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "59b6a180-b7fa-47da-931c-88ad08669ea4",
             "Value": {
                 "id": "0c1070c6-d362-47a5-9202-b5d724e6aac3",
@@ -371,6 +411,14 @@
             "Value": {
                 "id": "9ee49a45-4903-4822-9410-5d461341da80",
                 "resourcePath": "sprites\\spr_knight_idle\\spr_knight_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "67144326-a4bb-44ed-8f51-e7df0cdd224f",
+            "Value": {
+                "id": "9370e494-770a-4ce3-aa7c-b368cd68c734",
+                "resourcePath": "sprites\\spr_bishop_drill\\spr_bishop_drill.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -740,6 +788,14 @@
                 "id": "a139d574-3e41-4d78-af86-33315831d8f6",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d5513fed-d3eb-462a-b0ab-86541f888ced",
+            "Value": {
+                "id": "88cc5e2a-93d5-492e-af2d-806e1692d4aa",
+                "resourcePath": "sprites\\spr_bishop_rise\\spr_bishop_rise.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
