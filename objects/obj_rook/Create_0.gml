@@ -18,3 +18,4 @@ ready = false;
 hollow = false;
 
 suck_x = x;
+dark_alpha = 0;
