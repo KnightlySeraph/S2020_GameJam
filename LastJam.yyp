@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "e15d2edb-455d-42d0-982e-a62bbb479cd3",
+            "Value": {
+                "id": "af57ccc7-8423-47e7-b833-b3cdadc1747f",
+                "resourcePath": "sprites\\spr_player_feast\\spr_player_feast.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e80176b6-66bc-4bbc-8e4e-912345dda0c3",
             "Value": {
                 "id": "67810b7d-7c1f-4a50-9dd3-7f64817b4040",
