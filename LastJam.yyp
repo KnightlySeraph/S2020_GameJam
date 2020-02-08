@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "07c1e82d-b81b-46ca-a383-bb81f81b15a7",
+            "Value": {
+                "id": "edd0cfdb-a038-4ce0-ba3a-d5efbd7f2a7c",
+                "resourcePath": "views\\07c1e82d-b81b-46ca-a383-bb81f81b15a7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0a7d7f81-f667-44f3-9ed8-f80417651989",
             "Value": {
                 "id": "4fcda77a-4800-4f93-b68b-ffb4675b8cd0",
@@ -391,6 +399,14 @@
             }
         },
         {
+            "Key": "777a6d7a-73f6-459b-b8ab-322476fb0d00",
+            "Value": {
+                "id": "0325591d-11f5-48c3-847a-f2c74db0dff3",
+                "resourcePath": "sprites\\spr_queen_walk_right\\spr_queen_walk_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "797fb5ea-7355-4c77-805c-5f3a1bc1e3d4",
             "Value": {
                 "id": "9d095b90-21ab-4403-a503-0d74810470f7",
@@ -636,6 +652,14 @@
                 "id": "59c6c190-2cf6-4b93-8154-cd4129880f0d",
                 "resourcePath": "objects\\obj_bishop\\obj_bishop.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e2a11690-5a44-42a1-9006-8683793fbccb",
+            "Value": {
+                "id": "87359abd-d84e-4065-b376-13b72b60a230",
+                "resourcePath": "sprites\\spr_queen_cloak_idle_right\\spr_queen_cloak_idle_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
