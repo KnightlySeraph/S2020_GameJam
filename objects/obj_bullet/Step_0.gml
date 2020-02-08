@@ -15,6 +15,9 @@ if (place_meeting(x, y, obj_solid)) {
 	// Shake
 	scr_camShake(2, 15);
 	
+	// Play Sound
+	audio_play_sound(snd_bulletImpactWall, 0.6, false);
+	
 	instance_destroy();
 }
 
