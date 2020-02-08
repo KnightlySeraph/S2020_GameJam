@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "72f1abbc-ab68-48b0-9c3b-fa210fc88c47",
+            "Value": {
+                "id": "a1d891cc-515b-4342-8958-cf5fd153f016",
+                "resourcePath": "rooms\\rm_enemies\\rm_enemies.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "738f325e-9afe-49cd-b8f3-7c5f95eae48d",
             "Value": {
                 "id": "b503fc95-6a40-44d4-b555-9db2c5b4aebe",
