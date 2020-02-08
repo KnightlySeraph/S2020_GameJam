@@ -5,9 +5,9 @@ move = keyboard_check(ord("D")) + -keyboard_check(ord("A"));
 hsp = move * movementSpeed;
 jump = keyboard_check_pressed(vk_space);
 
-if (jump && jump > 0) {
+if (jump && jumps > 0) {
 	vsp = -jumpForce;
-	jump -= 1;
+	jumps -= 1;
 }
 
 // Check for grounded
