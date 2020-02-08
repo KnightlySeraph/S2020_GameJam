@@ -2,7 +2,7 @@ state = "IDLE"; //IDLE, WALK, ATTACK, DEAD, HOLLOW
 
 current_sprite = sprite_index;
 
-maxHealth = 100;
+maxHealth = 5;
 currentHealth = maxHealth;
 
 alert = false;
