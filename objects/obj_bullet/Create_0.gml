@@ -11,4 +11,7 @@ alarm[0] = timeToLive;
 // Direciton Bool Flag
 moveTo = true;
 
+// Particle spawn rate
+spawnRate = 0.025;
+
 

@@ -20,4 +20,11 @@ if (place_meeting(x, y, obj_solid)) {
 if (place_meeting(x, y, obj_enemy)) {
 	// Shake	
 	scr_camShake(2, 15);
+	
+	// Change Effect
+	sprite_index = spr_player_bullet_boom;
+	image_index = 0;
 }
+
+// Spawn Particles
+if (alarm[1] < 0) alarm[1] = room_speed * spawnRate;
