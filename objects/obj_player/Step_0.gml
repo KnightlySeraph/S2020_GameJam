@@ -1,0 +1,40 @@
+/// @description Movement and Physics
+
+// Collect Input
+move = keyboard_check(ord("D")) + -keyboard_check(ord("A"));
+hsp = move * movementSpeed;
+jump = keyboard_check_pressed(vk_space);
+
+if (jump && grounded) {
+	vsp = -jumpForce;
+}
+
+// Check for grounded
+if (place_meeting(x, y + 1, obj_solid)) {
+	grounded = true;	
+}
+
+// Gravity
+if (vsp < termVel) {
+	vsp += mass;	
+}
+
+// Collision
+//Horizontal Collision
+if (place_meeting(x + hsp, y, obj_solid)){
+	while(!place_meeting(x+sign(hsp), y, obj_solid)){
+		x += sign(hsp);	
+	}
+	hsp = 0;
+}
+//Vertical Collision
+if (place_meeting(x, y + vsp, obj_solid)){
+	while(!place_meeting(x, y+sign(vsp), obj_solid)){
+		y += sign(vsp);	
+	}
+	vsp = 0;
+}
+
+// Update the player's position
+x += hsp;
+y += vsp;
