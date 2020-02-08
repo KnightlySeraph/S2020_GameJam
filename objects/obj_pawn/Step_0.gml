@@ -2,12 +2,30 @@ mask_index = spr_pawn_idle;
 
 switch(state) {
 	case "IDLE":
+		sprite_index = spr_pawn_idle;
 		hsp = 0;
+		if(!alert) {
+			timer += 1;
+			if(timer > random_num) {
+				state = "WALK";
+				timer = 0;
+				random_num = irandom_range(60,90);
+				direct = choose(1,-1);
+			}
+		}
 		break;
 	
 	case "WALK":
 		sprite_index = spr_pawn_walk;
-		if(vsp==0) state = "IDLE";
+		if(vsp==0) hsp = spd * -direct;
+		if(!alert) {
+			timer += 1;
+			if(timer > random_num) {
+				state = "IDLE";
+				timer = 0;
+				random_num = irandom_range(90,120);
+			}
+		}
 		break;
 		
 	case "ATTACK":

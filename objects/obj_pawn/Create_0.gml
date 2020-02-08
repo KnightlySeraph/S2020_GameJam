@@ -12,8 +12,9 @@ spd = 5;
 maxHealth = 100;
 currentHealth = maxHealth;
 
-alerted = false;
+alert = false;
 timer = 0;
+random_num = irandom_range(60,90);
 
 ready = false;
 hollow = false;
