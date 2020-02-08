@@ -49,6 +49,7 @@ switch(state) {
 	case "DEATH":
 		if(!ready) sprite_index = spr_pawn_death;
 		else sprite_index = spr_pawn_ready;
+		hsp = 0;
 		break;
 		
 	case "HOLLOW":
@@ -76,6 +77,9 @@ if(place_meeting(x+hsp,y, obj_solid)) {
 		x += sign(hsp);
 	}
 	hsp = 0;
+	direct = -direct;
+}
+else if(!place_meeting(x + (sign(hsp) * 45), y + 1, obj_solid)) {
 	direct = -direct;
 }
 
