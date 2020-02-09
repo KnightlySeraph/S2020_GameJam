@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "850c52fe-d7cd-4ee5-b3f8-f342888bcdcb",
+            "Value": {
+                "id": "323e3d15-8f96-4da2-9fc6-46e16d262826",
+                "resourcePath": "views\\850c52fe-d7cd-4ee5-b3f8-f342888bcdcb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "85d81224-c392-4e67-b0ab-38bd2504ee1e",
             "Value": {
                 "id": "f58473f5-523a-4559-8bb7-e8592b660c34",
@@ -1108,6 +1116,14 @@
                 "id": "fb968a8a-98c0-4aed-8397-5c40686fb470",
                 "resourcePath": "sprites\\spr_rook_reveal\\spr_rook_reveal.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9eaf7e73-7bbd-468c-b104-da5f46ed76a2",
+            "Value": {
+                "id": "7ae36931-5c45-4b34-a2a6-62335acc2d62",
+                "resourcePath": "sounds\\snd_swordWhoosh\\snd_swordWhoosh.yy",
+                "resourceType": "GMSound"
             }
         },
         {
