@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "4f5b7411-8fd5-482b-9ad7-bb3ad727c13c",
+            "Value": {
+                "id": "7f189dfe-c0c5-42ce-bcb7-0792b7bff48a",
+                "resourcePath": "objects\\obj_title\\obj_title.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4fd15b8f-ee3d-44bf-9537-82d42c728dc5",
             "Value": {
                 "id": "fa245963-34c0-45e2-85df-030bbe25216b",
@@ -1347,6 +1355,14 @@
             "Value": {
                 "id": "17080550-9663-4e51-be6a-8e75d083c690",
                 "resourcePath": "sprites\\spr_bishop_death\\spr_bishop_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b8a0a239-5675-4404-a915-61ac284bb44f",
+            "Value": {
+                "id": "f540ce8f-d89e-46f7-8b81-92c21e884a8c",
+                "resourcePath": "sprites\\spr_title\\spr_title.yy",
                 "resourceType": "GMSprite"
             }
         },
