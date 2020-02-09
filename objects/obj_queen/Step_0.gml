@@ -55,9 +55,10 @@ switch(state) {
 		hsp = 0;
 		if(sprite_index = spr_queen_summon_loop) {
 			timer += 1;
-			if(timer > 30) {
+			if(timer > 90) {
 				if(swords > (16-healthPips)) sprite_index = spr_queen_summon_end;
 				else {
+					instance_create_depth(x,y,depth,obj_queen_sword);
 					swords += 1;
 					timer = 0;
 				}
