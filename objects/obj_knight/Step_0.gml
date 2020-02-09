@@ -46,7 +46,7 @@ switch(state) {
 		}
 		else {
 			direct = -sign(obj_player.x - x);
-			if(y > obj_player.y && abs(x-obj_player.x) < 480) {
+			if(abs(y-obj_player.y) < 912 && y > obj_player.y && abs(x-obj_player.x) < 480) {
 				if(!collision_line(x,y,x, y-784, obj_solid, false, false) && obj_player.grounded) {
 					state = "JUMP";
 					if(damage_box != noone) {
@@ -63,6 +63,11 @@ switch(state) {
 					}
 					var x_dist = abs(x-obj_player.x);
 					jump_hsp = x_dist/y_dist;
+					if(jump_hsp) >= 64 {
+						state = "IDLE";
+						alert = false;
+						exclamation = false;
+					}
 				}
 				else {
 					alert = false;
@@ -174,6 +179,35 @@ if(place_meeting(x+hsp,y, obj_solid)) {
 	}
 	hsp = 0;
 	if(!alert) direct = -direct;
+	else {
+		x -= hsp;
+		if(abs(y-obj_player.y) < 912 && !collision_line(x,y,x, y-784, obj_solid, false, false) && obj_player.grounded) {
+			state = "JUMP";
+			if(damage_box != noone) {
+				with(damage_box) instance_destroy();
+				damage_box = noone;
+			}
+			var temp_vsp = 0;
+			var temp_y = y-528;
+			var y_dist = 0;
+			while(!place_meeting(obj_player.x,temp_y, obj_solid)) {
+				temp_vsp += 1;
+				temp_y += temp_vsp;
+				y_dist += 1;
+			}
+			var x_dist = abs(x-obj_player.x);
+			jump_hsp = x_dist/y_dist;
+			if(jump_hsp) >= 64 {
+				state = "IDLE";
+				alert = false;
+				exclamation = false;
+			}
+		}
+		else {
+			alert = false;
+			exclamation = false;
+		}	
+	}
 }
 }
 
