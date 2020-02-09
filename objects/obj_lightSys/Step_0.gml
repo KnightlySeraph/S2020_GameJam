@@ -31,6 +31,9 @@ if (surface_exists(surf)) {
 	with (obj_queenRays) {
 		draw_sprite_ext(spr_godrays, 0, x, y, 0.5, 1.5, -30, make_color_rgb(165, 63, 63), 0.2);	
 	}
+	with (obj_kingrays) {
+		draw_sprite_ext(spr_godrays, 0, x, y, 0.5, 1.5, 0, make_color_rgb(229, 221, 100), 0.2);	
+	}
 	gpu_set_blendmode(bm_normal);
 	
 	// Reset the alpha
