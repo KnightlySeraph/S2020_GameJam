@@ -59,3 +59,8 @@ window_set_cursor(cr_none);
 if (!instance_exists(obj_transition)) {
 	instance_create_depth(x, y, 0, obj_transition);	
 }
+
+// Init sys manager
+if (!instance_exists(obj_system)) {
+	instance_create_depth(x, y, 0, obj_system);	
+}
