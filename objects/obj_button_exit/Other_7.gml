@@ -1,0 +1,1 @@
+if(sprite_index == spr_button_exit_select) game_end();

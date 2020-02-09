@@ -1,1 +1,1 @@
-if(sprite_index = spr_button_play_select) room_goto(Level1);
+if(sprite_index == spr_button_play_select) room_goto(Level1);
