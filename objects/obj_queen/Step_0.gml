@@ -11,7 +11,7 @@ switch(state) {
 			state = "WALK";
 			timer = 0;
 		}
-		if(abs(x-obj_player.x) < 450 && timer > 30) {
+		if(abs(x-obj_player.x) < 475 && timer > 30) {
 			state = "ATTACK";
 			hsp = 0;
 			timer = 0;
@@ -24,7 +24,7 @@ switch(state) {
 		sprite_index = spr_queen_cloak_walk;
 		if(vsp==0) hsp = spd * -direct;
 		direct = -sign(obj_player.x - x);
-		if(abs(x-obj_player.x) < 450) {
+		if(abs(x-obj_player.x) < 475) {
 			state = "ATTACK";
 			hsp = 0;
 		}
