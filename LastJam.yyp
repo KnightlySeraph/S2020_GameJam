@@ -1599,6 +1599,14 @@
             }
         },
         {
+            "Key": "d8790ca5-f98f-4492-b89c-4389012ba19f",
+            "Value": {
+                "id": "4e1bc3cd-a6c9-473e-9295-74f7585d2bb3",
+                "resourcePath": "sprites\\spr_kingPip\\spr_kingPip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "daae68b5-01e2-46aa-86e5-7095b32cda7b",
             "Value": {
                 "id": "c36e4426-fd31-4cc7-9476-a73d9059b299",

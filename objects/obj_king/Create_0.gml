@@ -9,3 +9,7 @@ state = "THROW";
 throw = false;
 
 currentSprite = sprite_index;
+
+healthPips = 16;
+
+hitpointOffset = 64;

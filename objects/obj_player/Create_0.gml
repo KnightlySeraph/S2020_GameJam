@@ -29,6 +29,7 @@ canSuck = false;
 sucking = false;
 dying = false;
 suckEnemy = noone;
+allowDarken = false;
 
 // IFrames
 invinTime = 2;
