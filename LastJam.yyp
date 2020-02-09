@@ -58,7 +58,7 @@
             "Key": "0705b6f9-ebf0-4a99-9b58-4e2172d79943",
             "Value": {
                 "id": "6179ea24-2955-489a-b196-14323daae1d4",
-                "resourcePath": "sprites\\spr_queen_reveal_right\\spr_queen_reveal_right.yy",
+                "resourcePath": "sprites\\spr_queen_reveal\\spr_queen_reveal.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -242,7 +242,7 @@
             "Key": "29c3e6ce-1409-45b9-b258-71c8b6ebd095",
             "Value": {
                 "id": "520c60f4-faf3-47be-b4d6-d4611fd545f3",
-                "resourcePath": "sprites\\spr_queen_summon_sword\\spr_queen_summon_sword.yy",
+                "resourcePath": "sprites\\spr_queen_summon_start\\spr_queen_summon_start.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -282,7 +282,7 @@
             "Key": "3193cef9-7047-4499-a1f5-a0191bb8417e",
             "Value": {
                 "id": "ba740864-754a-49be-bafb-eeb0064e06dd",
-                "resourcePath": "sprites\\spr_queen_prone\\spr_queen_prone.yy",
+                "resourcePath": "sprites\\spr_queen_ready\\spr_queen_ready.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -307,14 +307,6 @@
             "Value": {
                 "id": "42419287-7aef-4580-b124-2f53355ea777",
                 "resourcePath": "sprites\\spr_bishop_teleport_first\\spr_bishop_teleport_first.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "36a74544-5d15-46f2-9457-8e089aa68f54",
-            "Value": {
-                "id": "1ea4764b-d834-4f02-b73b-f7f128d812e7",
-                "resourcePath": "sprites\\spr_queen_idle_left\\spr_queen_idle_left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -674,7 +666,7 @@
             "Key": "6fa86080-2ccc-4497-b8c6-3dae67caf088",
             "Value": {
                 "id": "77980b0c-e435-412f-a37b-24a8446988ff",
-                "resourcePath": "sprites\\spr_queen_put_that_shit_away\\spr_queen_put_that_shit_away.yy",
+                "resourcePath": "sprites\\spr_queen_summon_end\\spr_queen_summon_end.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -730,7 +722,7 @@
             "Key": "7598a8f1-2527-42f0-aba5-066cac177740",
             "Value": {
                 "id": "771dad7b-71b2-4931-a961-65758f26cb73",
-                "resourcePath": "sprites\\spr_queen_idle_right\\spr_queen_idle_right.yy",
+                "resourcePath": "sprites\\spr_queen_idle\\spr_queen_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -738,7 +730,7 @@
             "Key": "777a6d7a-73f6-459b-b8ab-322476fb0d00",
             "Value": {
                 "id": "0325591d-11f5-48c3-847a-f2c74db0dff3",
-                "resourcePath": "sprites\\spr_queen_walk_right\\spr_queen_walk_right.yy",
+                "resourcePath": "sprites\\spr_queen_cloak_walk\\spr_queen_cloak_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -746,7 +738,7 @@
             "Key": "77e1e421-c465-4d4e-9c48-5ada5c8f3ad5",
             "Value": {
                 "id": "066ab314-77d3-42b4-9498-a2d994ddd1d5",
-                "resourcePath": "sprites\\spr_queen_fall\\spr_queen_fall.yy",
+                "resourcePath": "sprites\\spr_queen_death\\spr_queen_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -834,7 +826,7 @@
             "Key": "82e6b9b2-cca4-4d95-a2e0-2034506c55eb",
             "Value": {
                 "id": "1ff4242f-a60a-4ed7-aa3e-870f01f0ac9e",
-                "resourcePath": "sprites\\spr_queen_attack_right\\spr_queen_attack_right.yy",
+                "resourcePath": "sprites\\spr_queen_attack\\spr_queen_attack.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1290,7 +1282,7 @@
             "Key": "e2a11690-5a44-42a1-9006-8683793fbccb",
             "Value": {
                 "id": "87359abd-d84e-4065-b376-13b72b60a230",
-                "resourcePath": "sprites\\spr_queen_cloak_idle_right\\spr_queen_cloak_idle_right.yy",
+                "resourcePath": "sprites\\spr_queen_cloak_idle\\spr_queen_cloak_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
