@@ -1,9 +1,9 @@
 if(state != "DEATH" && state != "HOLLOW") mask_index = spr_bishop_idle;
-//else mask_index = spr_pawn_ready;
+//else mask_index = spr_bishop_ready;
 
 switch(state) {
 	case "IDLE":
-		sprite_index = spr_pawn_idle;
+		sprite_index = spr_bishop_idle;
 		hsp = 0;
 		timer += 1;
 		if(!alert) {
@@ -15,10 +15,6 @@ switch(state) {
 			}
 		}
 		else {
-			if(timer > 60) {
-				state = "WALK";
-				timer = 0;
-			}
 			if(abs(x-obj_player.x) < 96) {
 				state = "ATTACK";
 				hsp = 0;
@@ -26,40 +22,19 @@ switch(state) {
 			}
 		}
 		
-		break;
-	
-	case "WALK":
-		sprite_index = spr_pawn_walk;
-		if(vsp==0) hsp = spd * -direct;
-		if(!alert) {
-			timer += 1;
-			if(timer > random_num) {
-				state = "IDLE";
-				timer = 0;
-				random_num = irandom_range(90,120);
-			}
-		}
-		else {
-			direct = -sign(obj_player.x - x);
-			if(abs(x-obj_player.x) < 96) {
-				state = "ATTACK";
-				hsp = 0;
-			}
-		}
 		break;
 		
 	case "ATTACK":
-		sprite_index = spr_pawn_attack;
 		break;
 		
 	case "DEATH":
-		if(!ready) sprite_index = spr_pawn_death;
-		else sprite_index = spr_pawn_ready;
+		//if(!ready) sprite_index = spr_bishop_death;
+		//else sprite_index = spr_bishop_ready;
 		hsp = 0;
 		break;
 		
 	case "HOLLOW":
-		sprite_index = spr_pawn_hollow;
+		//sprite_index = spr_bishop_hollow;
 		break;
 }
 
@@ -70,7 +45,11 @@ if(currentHealth <= 0 && !ready) {
 	}
 }
 
-if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player.x - x) == -direct) {
+if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player.x - x) == -direct && !alert) {
+	alert = true;
+	alert_timer = 0;
+}
+else if(abs(point_distance(x,y,obj_player.x, obj_player.y)) < 1080 && alert) {
 	alert = true;
 	alert_timer = 0;
 }
