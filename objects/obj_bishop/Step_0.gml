@@ -5,26 +5,44 @@ switch(state) {
 	case "IDLE":
 		sprite_index = spr_bishop_idle;
 		hsp = 0;
-		timer += 1;
-		if(!alert) {
-			if(timer > random_num) {
-				state = "WALK";
-				timer = 0;
-				random_num = irandom_range(60,90);
-				direct = choose(1,-1);
+		if(alert) {
+			timer += 1;
+			if(timer > 90) {
+				direct = -sign(x-obj_player.x);
+				if(abs(x-obj_player.x) < 600 && abs(y - obj_player.y) < 192) {
+					state = "ATTACK";
+					hsp = 0;
+					timer = 0;
+					drill_step = 1;
+					direct = -sign(x-obj_player.x);
+				}
+				else {
+					state = "TELEPORT";
+					hsp = 0;
+					timer = 0;
+				}
 			}
 		}
+		break;
+		
+	case "ATTACK":
+		if(drill_step == 1) sprite_index = spr_bishop_crouch;
+		else if(drill_step == 3) sprite_index = spr_bishop_rise;
 		else {
-			if(abs(x-obj_player.x) < 96) {
-				state = "ATTACK";
+			sprite_index = spr_bishop_drill;
+			hsp = direct * spd;
+			timer += 1
+			if(timer > 45) {
+				drill_step = 3;
 				hsp = 0;
 				timer = 0;
 			}
 		}
-		
 		break;
 		
-	case "ATTACK":
+	case "TELEPORT":
+		state = "ATTACK";
+		timer = 0;
 		break;
 		
 	case "DEATH":
@@ -45,7 +63,7 @@ if(currentHealth <= 0 && !ready) {
 	}
 }
 
-if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(obj_player.x - x) == -direct && !alert) {
+if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(x-obj_player.x) == -direct && !alert) {
 	alert = true;
 	alert_timer = 0;
 }
@@ -79,12 +97,7 @@ if(place_meeting(x+hsp,y, obj_solid)) {
 		x += sign(hsp);
 	}
 	hsp = 0;
-	direct = -direct;
-}
-else if(!place_meeting(x + (sign(hsp) * 45), y + 1, obj_solid)) {
-	hsp = 0;
-	if(!alert) direct = -direct;
-	else state = "IDLE"
+	timer = 500;
 }
 
 if(place_meeting(x,y+vsp, obj_solid)) {
