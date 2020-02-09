@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0f052242-f0b6-451b-9e42-4d0790044e46",
+            "Value": {
+                "id": "d7f97acc-2227-401f-ab6b-ffde63fa4430",
+                "resourcePath": "sprites\\spr_sword_appear\\spr_sword_appear.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1004a27d-84a0-4029-ad6f-1bf7bea12543",
             "Value": {
                 "id": "c6151e6a-ffb5-4fe2-8568-050bfbbb6e55",
@@ -511,6 +519,14 @@
             }
         },
         {
+            "Key": "5be0e059-853a-48be-8c73-a501944a4a4e",
+            "Value": {
+                "id": "545ced20-5aad-4db6-a20f-7adefdc6e789",
+                "resourcePath": "sprites\\spr_queen_put_sword_away\\spr_queen_put_sword_away.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5c536d5c-ff35-4ba9-8d9f-9508d3922a09",
             "Value": {
                 "id": "047a5e83-a52b-43c1-a6b8-9a6fd5c16350",
@@ -683,6 +699,14 @@
             "Value": {
                 "id": "066ab314-77d3-42b4-9498-a2d994ddd1d5",
                 "resourcePath": "sprites\\spr_queen_fall\\spr_queen_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "785e5d31-4ae8-4d61-81d1-6acb3d8c83d7",
+            "Value": {
+                "id": "4ec3b8ce-0909-4719-884c-157f2bb479d2",
+                "resourcePath": "sprites\\spr_queen_summon_sword\\spr_queen_summon_sword.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -911,6 +935,14 @@
             }
         },
         {
+            "Key": "a18cf30e-9b29-485c-84b6-5d2388520ddd",
+            "Value": {
+                "id": "bc96f3d3-96d5-41f3-81f5-71b01aeac0de",
+                "resourcePath": "sprites\\spr_sword_vanish\\spr_sword_vanish.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4873526-da55-4395-b917-c51ee4b9272d",
             "Value": {
                 "id": "6dd65ab3-5508-463e-9bcb-f5a624ed35cd",
@@ -996,6 +1028,22 @@
                 "id": "e23180f4-26ba-4369-a2ff-085e21df2bd0",
                 "resourcePath": "views\\b91f2a1b-f9e2-4410-8390-720d6fe0e363.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b9d79eb9-f961-420e-9b6b-11bfb91e9357",
+            "Value": {
+                "id": "5bb408c6-a79e-480d-8aa9-694e51257c95",
+                "resourcePath": "sprites\\spr_sword\\spr_sword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bd69fc4f-017e-4a94-948d-b7e3a3233e5e",
+            "Value": {
+                "id": "9687efb4-16a2-4205-a77e-932fea0205da",
+                "resourcePath": "sprites\\spr_queen_summon_sword_loop\\spr_queen_summon_sword_loop.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
