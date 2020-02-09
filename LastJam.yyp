@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "8c4f92c0-8e4f-467f-a55e-1af7be11b010",
+            "Value": {
+                "id": "f528a379-df9d-43fd-ba75-bc4638648c78",
+                "resourcePath": "sprites\\spr_cursor\\spr_cursor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c7af0ef-4d64-42d8-aeb4-4db6ff4df0ab",
             "Value": {
                 "id": "58a7c529-6f40-4ed3-848b-fa9ae8e417ec",
@@ -732,6 +740,14 @@
                 "id": "0109ef2a-c4a7-4771-9d50-f10e34784122",
                 "resourcePath": "sounds\\snd_bulletImpactWall\\snd_bulletImpactWall.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "a74de5ce-7075-496e-be80-aee5c011f9b6",
+            "Value": {
+                "id": "cc4d635a-1183-47bf-90ca-971640caef9e",
+                "resourcePath": "objects\\obj_cursor\\obj_cursor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -828,6 +844,14 @@
                 "id": "01028f73-9e44-4eb9-ba93-3f6b94cb428e",
                 "resourcePath": "objects\\obj_alert\\obj_alert.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cb9763af-3837-491a-bb90-1fe3659941a4",
+            "Value": {
+                "id": "5b2bb645-a426-4859-bcc4-771cd013bb46",
+                "resourcePath": "views\\cb9763af-3837-491a-bb90-1fe3659941a4.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -940,6 +964,14 @@
                 "id": "4c5b0dbd-da68-4794-a158-67981b8a4657",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f469e9af-96a9-46fc-a521-310734fc1a38",
+            "Value": {
+                "id": "a81bca4e-2863-4be1-8a5b-280019c51e41",
+                "resourcePath": "sounds\\snd_castleAmb\\snd_castleAmb.yy",
+                "resourceType": "GMSound"
             }
         },
         {
