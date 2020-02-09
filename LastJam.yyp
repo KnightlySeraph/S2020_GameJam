@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "46660ab1-2648-4a10-a4b6-851f0dae5dc9",
+            "Value": {
+                "id": "79b184b0-7b9f-423b-b7c3-1f10c26d3555",
+                "resourcePath": "sprites\\spr_queen_walk_swood\\spr_queen_walk_swood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "470656aa-a109-4830-b2e1-78fd3333b94e",
             "Value": {
                 "id": "095aeacd-bcae-4985-ad43-c09ce69071d3",
