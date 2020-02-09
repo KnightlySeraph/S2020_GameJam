@@ -49,7 +49,7 @@ switch(state) {
 		
 	case "ATTACK":
 		sprite_index = spr_queen_attack;
-		if(image_index > 4 && image_index < 6 && damage_box == noone) damage_box = instance_create_depth(x,y,depth-1,obj_enemy_damage);
+		if(image_index > 4 && image_index < 6 && damage_box == noone && current_sprite == sprite_index) damage_box = instance_create_depth(x,y,depth-1,obj_enemy_damage);
 		if(damage_box != noone) {
 			if(image_index > 11) {
 				with(damage_box) instance_destroy();
