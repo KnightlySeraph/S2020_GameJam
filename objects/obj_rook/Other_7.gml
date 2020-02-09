@@ -2,6 +2,6 @@
 if(sprite_index == spr_rook_death) ready = true;
 if(sprite_index == spr_rook_hide) {
 	sprite_index = spr_rook_idle_hide;
-	timer = 100;
+	timer = 120;
 }
 if(sprite_index == spr_rook_reveal) sprite_index = spr_rook_idle;
