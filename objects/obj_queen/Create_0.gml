@@ -40,3 +40,7 @@ attacks = 0;
 swords = 0;
 
 lastPip = healthPips;
+
+// Audio 
+if (!audio_is_playing(snd_queensTrack)) audio_play_sound(snd_queensTrack, 1, true);
+if (audio_is_playing(snd_backNoise)) audio_stop_sound(snd_backNoise);
