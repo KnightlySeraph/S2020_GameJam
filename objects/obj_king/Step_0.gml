@@ -6,9 +6,26 @@ switch(state) {
 		}
 		break;
 		
-	case("DEATH"):
+	case "DEATH":
+		if(!ready) sprite_index = spr_king_death;
+		else sprite_index = spr_king_ready;
+		hsp = 0;
 		break;
 		
-	case("HOLLOW"):
+	case "HOLLOW":
+		sprite_index = spr_king_hollow;
 		break;
+}
+
+if(currentHealth <= 0 && !ready) {
+	if(abs(obj_player.x - x) > 1000) currentHealth = 1;
+	else state = "DEATH";
+}
+if(hollow) state = "HOLLOW";
+
+suck_x = x+178;
+
+if(currentSprite != sprite_index) {
+	image_index = 0;
+	currentSprite = sprite_index;
 }

@@ -7,3 +7,5 @@ event_inherited();
 currentHealth = 1;
 state = "THROW";
 throw = false;
+
+currentSprite = sprite_index;

@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "310f9cee-6123-4a72-a4e0-4e30a31439be",
+            "Value": {
+                "id": "56efd796-18e1-48cf-85b1-6b4d67c2d150",
+                "resourcePath": "sprites\\spr_king_death\\spr_king_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3193cef9-7047-4499-a1f5-a0191bb8417e",
             "Value": {
                 "id": "ba740864-754a-49be-bafb-eeb0064e06dd",
@@ -476,6 +484,14 @@
                 "id": "2256d8c8-aa5c-482e-b2ba-60de34d05e7f",
                 "resourcePath": "views\\41217f69-02a9-4d1c-bd04-4e10f9c77f2c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "442f8a10-04d5-4e77-bec7-d1c8b4eaeff7",
+            "Value": {
+                "id": "6706fd29-a169-472d-ae5e-624cabb9b6fd",
+                "resourcePath": "sprites\\spr_king_chair\\spr_king_chair.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1447,6 +1463,14 @@
             }
         },
         {
+            "Key": "c7a6ac08-fdf4-4651-a171-2cea5197e799",
+            "Value": {
+                "id": "20d3afab-5216-48e7-bc59-930f4d719089",
+                "resourcePath": "sprites\\spr_king_hollow\\spr_king_hollow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c9cc9f1f-2b63-4019-93a0-79721e52d6b2",
             "Value": {
                 "id": "11b2ee5b-92a2-42c3-8848-bdd64ad9aa32",
@@ -1476,6 +1500,14 @@
                 "id": "a139d574-3e41-4d78-af86-33315831d8f6",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd8b1889-19c5-4f42-ae82-243f0b3a7b90",
+            "Value": {
+                "id": "b139b2ab-caff-49d3-a22e-461d8aa69696",
+                "resourcePath": "sprites\\spr_king_ready\\spr_king_ready.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
