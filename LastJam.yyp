@@ -1207,6 +1207,14 @@
             }
         },
         {
+            "Key": "acccee00-deb9-4e4a-9e8c-594c34bad5ac",
+            "Value": {
+                "id": "69a7b812-cbd6-4a5e-b00d-19377a63c8ef",
+                "resourcePath": "views\\acccee00-deb9-4e4a-9e8c-594c34bad5ac.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b0bb4853-6a28-4004-845a-164e1c560777",
             "Value": {
                 "id": "fecd636c-5a39-4ea5-a251-c4033bb937cd",
@@ -1372,6 +1380,14 @@
                 "id": "af1d5b32-5254-45d2-b982-7f6d24dcf16a",
                 "resourcePath": "sprites\\spr_king_throw_daggar\\spr_king_throw_daggar.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d0104655-1010-4394-81cb-7eb7dcbc6517",
+            "Value": {
+                "id": "60239bae-450f-4be5-ae70-335bf972d2b1",
+                "resourcePath": "rooms\\MainMenu\\MainMenu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
