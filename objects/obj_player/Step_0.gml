@@ -153,6 +153,16 @@ if (hurt) {
 	if (alarm[3] < 0) alarm[3] = room_speed * 0.5;	
 	if (!invin) invin = true;
 }
+// Death
+if (hitpoints <= 0) {
+	dying = true;
+	if (moving_left) {
+		sprite_index = spr_player_death_left;	
+	}
+	else {
+		sprite_index = spr_player_death_right;	
+	}
+}
 
 // Gunplay
 if (mouse_check_button(mb_left) && !fire_delay && grounded) { // Check for input
@@ -193,7 +203,7 @@ if (keyboard_check_pressed(ord("I"))) {
 
 // Animation Handler
 // Idling
-if (move == 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
+if (move == 0 && grounded && !mouse_check_button(mb_left) && !sucking && !dying) {
 	if (moving_right) {
 		sprite_index = spr_player_idle_right;
 	}
@@ -203,7 +213,7 @@ if (move == 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
 }
 
 // Moving left or right and not firing
-if (move != 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
+if (move != 0 && grounded && !mouse_check_button(mb_left) && !sucking && !dying) {
 	if (move == 1) {
 		sprite_index = spr_player_walking_right;	
 	}
@@ -218,7 +228,7 @@ if (move != 0 && grounded && !mouse_check_button(mb_left) && !sucking) {
 }
 
 // Sucking
-if (move == 0 && sucking && grounded) {
+if (move == 0 && sucking && grounded && !dying) {
 	if (moving_right) {
 		sprite_index = spr_player_feast_right;	
 	}
@@ -233,7 +243,7 @@ if (move == 0 && sucking && grounded) {
 }
 
 // Shooting, idle
-if (move == 0 && grounded && mouse_check_button(mb_left)) {
+if (move == 0 && grounded && mouse_check_button(mb_left) && !dying) {
 	if (moving_right) {
 		sprite_index = spr_player_shoot_idle_right;	
 	}
@@ -247,7 +257,7 @@ if (move == 0 && grounded && mouse_check_button(mb_left)) {
 }
 
 // Falling Animation
-if (!grounded && vsp > 0) {
+if (!grounded && vsp > 0 && !dying) {
 	if (moving_right) {
 		sprite_index = spr_player_fall_right;	
 	}
@@ -257,7 +267,7 @@ if (!grounded && vsp > 0) {
 }
 
 // Firing while moving
-if (grounded && move != 0 && mouse_check_button(mb_left)) {
+if (grounded && move != 0 && mouse_check_button(mb_left) && !dying) {
 	if (move == 1) {
 		sprite_index = spr_walk_shoot_right;	
 	}
@@ -267,7 +277,7 @@ if (grounded && move != 0 && mouse_check_button(mb_left)) {
 }
 
 // Jumping Animation
-if(vsp <= 0 && !grounded) {
+if(vsp <= 0 && !grounded && !dying) {
 	if (moving_right) {
 		sprite_index = spr_player_jump_right;	
 	}

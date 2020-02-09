@@ -7,3 +7,8 @@ if (sprite_index == spr_player_jump_left || sprite_index == spr_player_jump_righ
 if(sprite_index = spr_player_feast_left || sprite_index = spr_player_feast_right) {
 	if(suckEnemy != noone) suckEnemy.hollow = true;
 }
+
+// Reset the room on death
+if (sprite_index == spr_player_death_left || sprite_index == spr_player_death_right) {
+	room_restart();	
+}

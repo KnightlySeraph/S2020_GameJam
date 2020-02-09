@@ -19,6 +19,10 @@ switch(state) {
 	case "DEATH":
 		if(!ready) sprite_index = spr_rook_death;
 		else sprite_index = spr_rook_ready
+		if (!deathSndPlayed) {
+			audio_play_sound(snd_break, 0.5, false);
+			deathSndPlayed = true;
+		}
 		break;
 		
 	case "HOLLOW":

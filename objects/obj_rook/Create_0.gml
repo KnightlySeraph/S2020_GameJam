@@ -21,3 +21,8 @@ suck_x = x;
 dark_alpha = 0;
 
 image_xscale = choose(-1,1);
+
+text_alpha = 0;
+
+// Audio from justin
+deathSndPlayed = false;

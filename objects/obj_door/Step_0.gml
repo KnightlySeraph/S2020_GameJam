@@ -26,6 +26,7 @@ for (i = 0; i < instance_number(obj_enemy); i++) {
 		open = true;	
 	}
 }
+enemies_left = numEnemies;
 
 numEnemies = instance_number(obj_enemy);
 
@@ -34,3 +35,9 @@ if (open && place_meeting(x, y, obj_player) && keyboard_check_pressed(ord("S")))
 		obj_transition.transition = true;	
 	}
 }
+
+if(place_meeting(x,y,obj_player) && numEnemies > 0) text_alpha = 1;
+else text_alpha = 0;
+
+var en = numEnemies-enemies_left
+text = string(en) + "/" + string(numEnemies);
