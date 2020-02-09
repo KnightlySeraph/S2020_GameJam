@@ -1,14 +1,14 @@
 {
-    "id": "2c60bd82-c8e5-4aed-8d7c-6c40a5c32c0e",
+    "id": "59a58fcc-8e51-4a0f-a9c7-940efec8ffab",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_queensTrack",
+    "name": "snd_qWalk",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,
     "preload": false,
-    "sampleRate": 48000,
+    "sampleRate": 44100,
     "type": 0,
-    "volume": 0.7
+    "volume": 0.3
 }

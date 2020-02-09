@@ -18,6 +18,8 @@ else {
 			letsdothis = true;
 			x -= 152;
 			sprite_index = spr_queen_reveal;
+			// Audio
+			if (!audio_is_playing(snd_qStart)) audio_play_sound(snd_qStart, 0.6, false);
 			image_index = 0;
 		}
 	}

@@ -38,6 +38,7 @@ switch(state) {
 	
 	case "WALK":
 		sprite_index = spr_queen_walk;
+		if (!audio_is_playing(snd_qWalk)) audio_play_sound(snd_qWalk, 1, false);
 		if(vsp==0) hsp = spd * -direct;
 		direct = -sign(obj_player.x - x);
 		if(abs(x-obj_player.x) < 450) {
@@ -58,6 +59,10 @@ switch(state) {
 		
 	case "ATTACK":
 		sprite_index = spr_queen_attack;
+		// Audio
+		if (!audio_is_playing(snd_sweepAttack)) audio_play_sound(snd_sweepAttack, 1.0, false);
+		// Screen Shake
+		scr_camShake(5, 25);
 		if(image_index > 4 && image_index < 6 && damage_box == noone && current_sprite == sprite_index) damage_box = instance_create_depth(x,y,depth-1,obj_enemy_damage);
 		if(damage_box != noone) {
 			if(image_index > 11) {
@@ -134,6 +139,10 @@ switch(state) {
 	case "DEATH":
 		if(!ready) sprite_index = spr_queen_death;
 		else sprite_index = spr_queen_ready;
+		if (!deathNoise) {
+			audio_play_sound(snd_qDeath, 1.0, false);
+			deathNoise = true;
+		}
 		hsp = 0;
 		break;
 		
