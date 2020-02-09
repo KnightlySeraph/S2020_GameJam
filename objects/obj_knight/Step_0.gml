@@ -35,7 +35,14 @@ switch(state) {
 		}
 		else {
 			direct = -sign(obj_player.x - x);
+			if(abs(y-obj_player.y) > 320) state = "JUMP";
 		}
+		break;
+		
+	case "JUMP":
+		if(grounded) vsp = -25;
+		hsp = -direct * spd * 3;
+		direct = -sign(obj_player.x - x);
 		break;
 		
 	case "DEATH":
@@ -92,19 +99,16 @@ if(place_meeting(x+hsp,y, obj_solid)) {
 	hsp = 0;
 	direct = -direct;
 }
-else if(!place_meeting(x + (sign(hsp) * 45), y + 1, obj_solid)) {
-	hsp = 0;
-	if(!alert) direct = -direct;
-	else state = "IDLE"
-}
 }
 
 if(place_meeting(x,y+vsp, obj_solid)) {
 	while(!place_meeting(x,y+sign(vsp), obj_solid)) {
 		y += sign(vsp);
 	}
+	grounded = true;
 	vsp = 0;
 }
+else grounded = false;
 
 
 x+=hsp;

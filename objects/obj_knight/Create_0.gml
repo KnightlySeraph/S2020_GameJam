@@ -26,3 +26,5 @@ hollow = false;
 
 suck_x = x;
 dark_alpha = 0;
+
+grounded = false;
