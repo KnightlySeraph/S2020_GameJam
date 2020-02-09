@@ -80,6 +80,17 @@ switch(state) {
 			}
 			else {
 				sprite_index = spr_knight_land;
+				if(image_index > 2 && image_index < 5 && damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
+				if(damage_box != noone) {
+					damage_box.x = x;
+					damage_box.y = y + 215;
+					damage_box.image_xscale = 5.5;
+					damage_box.image_yscale = 1.25;
+					if(image_index > 5) {
+						with(damage_box) instance_destroy();
+						damage_box = noone;
+					}
+				}
 			}
 		}
 		else sprite_index = spr_knight_midair;
@@ -136,6 +147,24 @@ if(hurt) image_alpha = random_range(0.4, 0.9);
 else image_alpha = 1;
 
 vsp += grav;
+
+if(state == "WALK") {
+	if(last_direct != direct) {
+		last_direct = direct;
+		momentum = 0;
+		momentum_timer = 0;
+	}
+	momentum_timer += 1;
+	if(momentum_timer > 30) {
+		momentum -= 1;
+		momentum_timer = 0;
+	}
+}
+else {
+	momentum = 0;
+	momentum_timer = 0;
+}
+hsp += momentum * direct;
 
 if(currentHealth > 0) {
 if(place_meeting(x+hsp,y, obj_solid)) {
