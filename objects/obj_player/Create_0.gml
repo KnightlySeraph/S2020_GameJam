@@ -42,3 +42,6 @@ suckShakeInc = 0.1;
 
 // UI Stuff
 hitpointOffset = 64;
+
+// Init Sound Stuff
+audio_play_sound(snd_castleAmb, 1, true);

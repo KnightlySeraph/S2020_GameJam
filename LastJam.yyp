@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "cb9763af-3837-491a-bb90-1fe3659941a4",
+            "Value": {
+                "id": "5b2bb645-a426-4859-bcc4-771cd013bb46",
+                "resourcePath": "views\\cb9763af-3837-491a-bb90-1fe3659941a4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "a139d574-3e41-4d78-af86-33315831d8f6",
@@ -940,6 +948,14 @@
                 "id": "4c5b0dbd-da68-4794-a158-67981b8a4657",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f469e9af-96a9-46fc-a521-310734fc1a38",
+            "Value": {
+                "id": "a81bca4e-2863-4be1-8a5b-280019c51e41",
+                "resourcePath": "sounds\\snd_castleAmb\\snd_castleAmb.yy",
+                "resourceType": "GMSound"
             }
         },
         {
