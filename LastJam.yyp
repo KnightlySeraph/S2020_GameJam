@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "262b796b-dcf6-44e3-bd40-7bce2e0ff253",
+            "Value": {
+                "id": "7970aeaf-e5d0-4626-aeba-a388059903a2",
+                "resourcePath": "sprites\\spr_walk_shoot_right\\spr_walk_shoot_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "264f7441-9612-42cc-80e8-0c4ef4490234",
             "Value": {
                 "id": "81e81cbf-c53d-4639-a7c0-5037ea0fea48",
