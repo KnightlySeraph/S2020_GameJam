@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "4f14102c-ab2a-4af8-9bea-2ee2a29e9e12",
+            "Value": {
+                "id": "a388e371-8744-4793-9959-b193785b861c",
+                "resourcePath": "views\\4f14102c-ab2a-4af8-9bea-2ee2a29e9e12.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "55f6b8ff-812b-4ac2-974e-8e490fc1ef86",
             "Value": {
                 "id": "c725890e-6b71-49f0-87ac-960838f7500f",
@@ -1015,6 +1023,14 @@
             }
         },
         {
+            "Key": "ce842da7-de82-4a89-8f8c-390d1372ecf2",
+            "Value": {
+                "id": "af1d5b32-5254-45d2-b982-7f6d24dcf16a",
+                "resourcePath": "sprites\\spr_king_throw_daggar\\spr_king_throw_daggar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d5513fed-d3eb-462a-b0ab-86541f888ced",
             "Value": {
                 "id": "88cc5e2a-93d5-492e-af2d-806e1692d4aa",
@@ -1124,6 +1140,14 @@
                 "id": "a81bca4e-2863-4be1-8a5b-280019c51e41",
                 "resourcePath": "sounds\\snd_castleAmb\\snd_castleAmb.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f4acd944-c879-44be-a525-d16356a55ab9",
+            "Value": {
+                "id": "9632ff83-8ca4-4a58-af49-edcdbce8dd5e",
+                "resourcePath": "sprites\\spr_daggar\\spr_daggar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
