@@ -14,13 +14,13 @@ if (surface_exists(surf)) {
 	// draw_rectangle(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), camera_get_view_x(view_camera[0]) + cam_width, camera_get_view_y(view_camera[0]) + cam_height, 0);
 	draw_rectangle(0, 0, room_width, room_height, 0);
 	
-	// Set up light sources
+	// Light Source Manager
 	gpu_set_blendmode(bm_add);
 	with (obj_lightSrc) {
 		draw_sprite_ext(spr_lightSrc2, 0, x, y, 0.5 + random(0.05), 0.5 + random(0.05), 0, c_white, 0.2);	
 	}
 	with (obj_godrays) {
-		draw_sprite_ext(spr_godrays, 0, x, y, 0.25, 2, -30, make_color_rgb(229, 221, 100), 0.2);	
+		draw_sprite_ext(spr_godrays, 0, x, y, 0.5, 1.5, -30, make_color_rgb(229, 221, 100), 0.2);	
 	}
 	with (obj_candleLight) {
 		draw_sprite_ext(spr_lightSrc2, 0, x, y, 0.25 + random(0.025), 0.25 + random(0.025), 0, c_orange, 0.2);
