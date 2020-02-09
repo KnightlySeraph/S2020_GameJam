@@ -22,7 +22,8 @@ moving_left = false;
 
 
 // Other Gameplay Stuff
-hitpoints = 7;
+hitpoints = 4;
+hitpointMax = hitpoints;
 hurt = false;
 canSuck = false;
 sucking = false;

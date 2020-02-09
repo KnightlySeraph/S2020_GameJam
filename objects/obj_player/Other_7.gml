@@ -6,6 +6,9 @@ if (sprite_index == spr_player_jump_left || sprite_index == spr_player_jump_righ
 }
 if(sprite_index = spr_player_feast_left || sprite_index = spr_player_feast_right) {
 	if(suckEnemy != noone) suckEnemy.hollow = true;
+	// Increase Health
+	hitpoints++;
+	hitpoints = clamp(hitpoints, 0, hitpointMax);
 }
 
 // Reset the room on death
