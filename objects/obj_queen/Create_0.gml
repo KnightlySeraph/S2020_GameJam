@@ -9,7 +9,7 @@ grav = 1;
 
 spd = 1;
 
-pipAmount = 20;
+pipAmount = 15;
 maxHealth = (pipAmount * 16);
 currentHealth = maxHealth;
 
