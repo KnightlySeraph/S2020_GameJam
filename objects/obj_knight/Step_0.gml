@@ -24,6 +24,8 @@ switch(state) {
 	
 	case "WALK":
 		sprite_index = spr_knight_walk;
+		// Audio
+		if (!audio_is_playing(snd_qWalk)) audio_play_sound(snd_qWalk, 0.5, false);
 		if(damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
 		if(damage_box != noone) {
 			damage_box.x = x - 40*direct;
@@ -82,6 +84,7 @@ switch(state) {
 			timer = 0;
 			if(!jumped) {
 				sprite_index = spr_knight_jump;
+				if (!audio_is_playing(snd_jump)) audio_play_sound(snd_jump, 0.6, false);
 			}
 			else {
 				sprite_index = spr_knight_land;
@@ -107,6 +110,10 @@ switch(state) {
 	case "DEATH":
 		if(!ready) sprite_index = spr_knight_death;
 		else sprite_index = spr_knight_ready;
+		if (!deathNoise) {
+			audio_play_sound(snd_break, 1, false);
+			deathNoise = true;
+		}
 		hsp = 0;
 		break;
 		
