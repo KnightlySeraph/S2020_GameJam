@@ -9,7 +9,8 @@
         "5c536d5c-ff35-4ba9-8d9f-9508d3922a09",
         "0970f52e-07a8-4a9c-977c-c0ccb8473832",
         "bc1d77eb-8f3a-44fe-aba3-3e8e6feb8852",
-        "c3a87db3-0546-47a7-99bd-718539a81e8c"
+        "c3a87db3-0546-47a7-99bd-718539a81e8c",
+        "7e09cfde-19c3-4cf1-9d03-f6c1687a5435"
     ],
     "filterType": "GMSprite",
     "folderName": "Environment",

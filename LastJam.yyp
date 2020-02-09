@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "23885eae-eaa7-4cae-9a62-372ff0388ddd",
+            "Value": {
+                "id": "b1b9abfa-910b-4ee7-a251-3220a989b0a8",
+                "resourcePath": "objects\\obj_fireplaceLight\\obj_fireplaceLight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24db1038-4f79-41c4-a67b-d16977e14917",
             "Value": {
                 "id": "dd66c93d-c6ae-4e99-ae6e-18493e493923",
@@ -395,6 +403,14 @@
             "Value": {
                 "id": "0297742c-0fbc-4de4-a192-66d15d003c82",
                 "resourcePath": "sprites\\spr_candelabra\\spr_candelabra.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "46660ab1-2648-4a10-a4b6-851f0dae5dc9",
+            "Value": {
+                "id": "79b184b0-7b9f-423b-b7c3-1f10c26d3555",
+                "resourcePath": "sprites\\spr_queen_walk_swood\\spr_queen_walk_swood.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -795,6 +811,14 @@
             "Value": {
                 "id": "86daad42-9c1e-4db6-bcb7-f66d0d70388e",
                 "resourcePath": "sprites\\spr_sword_app\\spr_sword_app.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7e09cfde-19c3-4cf1-9d03-f6c1687a5435",
+            "Value": {
+                "id": "03cdfedc-4ef4-48b7-9701-4e1ea3505907",
+                "resourcePath": "sprites\\spr_fireplace\\spr_fireplace.yy",
                 "resourceType": "GMSprite"
             }
         },
