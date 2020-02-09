@@ -13,5 +13,6 @@ if(sprite_index = spr_player_feast_left || sprite_index = spr_player_feast_right
 
 // Reset the room on death
 if (sprite_index == spr_player_death_left || sprite_index == spr_player_death_right) {
+	if (audio_is_playing(snd_queensTrack)) audio_stop_sound(snd_queensTrack);
 	room_restart();	
 }
