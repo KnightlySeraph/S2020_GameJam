@@ -37,3 +37,5 @@ damage_box = noone;
 momentum = 0;
 momentum_timer = 0;
 last_direct = direct;
+
+text_alpha = 0;
