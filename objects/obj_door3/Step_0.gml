@@ -6,6 +6,6 @@ if (instance_exists(obj_queen)) {
 	}
 }
 
-if (place_meeting(x, y, obj_player) && keyboard_check_pressed(ord("W"))) {
+if (place_meeting(x, y, obj_player) && keyboard_check_pressed(ord("S"))) {
 	if (instance_exists(obj_transition)) obj_transition.transition = true;	
 }
