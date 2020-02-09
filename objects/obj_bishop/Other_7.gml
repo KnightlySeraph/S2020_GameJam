@@ -12,18 +12,18 @@ if(sprite_index == spr_bishop_teleport_first) {
 		image_alpha = 1;
 		spot_chosen = true;
 		var target_x = obj_player.x;
-		var target_y = obj_player.y;
+		var target_y = obj_player.y - 128;
 		var offset = choose(-1,1) * 250;
 	
 		var warning = 0;
 	
-		while(place_meeting(x, target_y, obj_solid)) {
+		if(place_meeting(target_x + offset, target_y, obj_solid)) offset = -offset;
+	
+		while(place_meeting(target_x + offset, target_y, obj_solid)) {
 			target_y -= 1;
 			warning += 1;
 			if(warning > 1000) break;
 		}
-	
-		if(place_meeting(target_x + offset, target_y, obj_solid)) offset = -offset;
 	
 		x = target_x + offset;
 		y = target_y;
