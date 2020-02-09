@@ -30,3 +30,5 @@ dark_alpha = 0;
 drill_step = 1; //1,2,3
 
 spot_chosen = false;
+
+damage_box = noone;

@@ -31,9 +31,20 @@ switch(state) {
 		else if(drill_step == 3) sprite_index = spr_bishop_rise;
 		else {
 			sprite_index = spr_bishop_drill;
+			if(damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
+			if(damage_box != noone) {
+				damage_box.x = x + 46*direct;
+				damage_box.y = y + 66;
+				damage_box.image_xscale = 3.6;
+				damage_box.image_yscale = 1.3;
+			}
 			hsp = direct * spd;
 			timer += 1
 			if(timer > 45) {
+				if(damage_box != noone) {
+					with(damage_box) instance_destroy();
+					damage_box = noone;
+				}
 				drill_step = 3;
 				hsp = 0;
 				timer = 0;
