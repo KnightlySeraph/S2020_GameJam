@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "6304b5f6-f757-4c6b-a58f-9b153bac85cf",
+            "Value": {
+                "id": "d583c235-a6c2-47cb-97a6-5342d3d315bc",
+                "resourcePath": "sprites\\spr_roseWindow\\spr_roseWindow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "644e8e7e-3e86-4bae-84a3-570688510ca9",
             "Value": {
                 "id": "9517bd9c-a05e-433b-a8ac-a7143015858f",

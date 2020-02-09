@@ -141,6 +141,7 @@ switch(state) {
 		else sprite_index = spr_queen_ready;
 		if (!deathNoise) {
 			audio_play_sound(snd_qDeath, 1.0, false);
+			audio_stop_sound(snd_queensTrack);
 			deathNoise = true;
 		}
 		hsp = 0;
