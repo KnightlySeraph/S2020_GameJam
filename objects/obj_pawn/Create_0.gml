@@ -30,3 +30,6 @@ dark_alpha = 0;
 damage_box = noone;
 
 text_alpha = 0;
+
+// Audio
+deathNoise = false;

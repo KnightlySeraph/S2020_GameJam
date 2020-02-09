@@ -50,6 +50,7 @@ switch(state) {
 		
 	case "ATTACK":
 		sprite_index = spr_pawn_attack;
+		if (!audio_is_playing(snd_rookShoot)) audio_play_sound(snd_rookShoot, 0.6, false);
 		if(image_index > 6 && image_index < 8 && damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
 		if(damage_box != noone) {
 			damage_box.x = x - 77*direct;
@@ -66,6 +67,10 @@ switch(state) {
 	case "DEATH":
 		if(!ready) sprite_index = spr_pawn_death;
 		else sprite_index = spr_pawn_ready;
+		if (!deathNoise) {
+			audio_play_sound(snd_break, 0.6, false);
+			deathNoise = true;
+		}
 		hsp = 0;
 		break;
 		
