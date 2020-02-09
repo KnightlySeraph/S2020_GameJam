@@ -8,15 +8,18 @@ switch(state) {
 		timer += 1;
 		
 		if(timer > 60) {
-			state = "WALK";
-			timer = 0;
+			if(abs(x-obj_player.x) < 475) {
+				state = "ATTACK";
+				hsp = 0;
+				timer = 0;
+				direct = -sign(obj_player.x - x);
+			}
+			else {
+				state = "WALK";
+				timer = 0;
+			}
 		}
-		if(abs(x-obj_player.x) < 475 && timer > 30) {
-			state = "ATTACK";
-			hsp = 0;
-			timer = 0;
-			direct = -sign(obj_player.x - x);
-		}
+
 		
 		break;
 	
