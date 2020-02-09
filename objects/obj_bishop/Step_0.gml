@@ -31,6 +31,8 @@ switch(state) {
 		else if(drill_step == 3) sprite_index = spr_bishop_rise;
 		else {
 			sprite_index = spr_bishop_drill;
+			// Audio work from justin
+			if (!audio_is_playing(snd_drillAttack)) audio_play_sound(snd_drillAttack, 0.5, false);
 			if(damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
 			if(damage_box != noone) {
 				damage_box.x = x + 46*direct;
@@ -53,9 +55,15 @@ switch(state) {
 		break;
 		
 	case "TELEPORT":
-		if(!spot_chosen) sprite_index = spr_bishop_teleport_first;
+		if(!spot_chosen) {
+			sprite_index = spr_bishop_teleport_first;
+			// Audio from justin
+			if (!audio_is_playing(snd_warp)) audio_play_sound(snd_warp, 0.5, false);
+		}
 		else {
 			sprite_index = spr_bishop_teleport_second;
+			// Audio work from justin
+			if (!audio_is_playing(snd_sweepAttack)) audio_play_sound(snd_sweepAttack, 0.5, false);
 			if(image_index > 8 && image_index < 11 && damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
 			if(damage_box != noone) {
 				damage_box.x = x;
@@ -73,6 +81,11 @@ switch(state) {
 	case "DEATH":
 		if(!ready) sprite_index = spr_bishop_death;
 		else sprite_index = spr_bishop_ready;
+		// Audio work from justin
+		if (!deathSndPlayed) {
+			audio_play_sound(snd_break, 0.5, false);
+			deathSndPlayed = true;
+		}
 		hsp = 0;
 		break;
 		

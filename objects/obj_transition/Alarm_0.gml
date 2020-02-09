@@ -9,5 +9,11 @@ else if (room == Level2) {
 else if (room == Level3) {
 	room_goto(Level4);	
 }
+else if (room == Level4) {
+	room_goto(Level5);	
+}
+else if (room == Level5) {
+	room_goto(Level6);	
+}
 
 transition = false;

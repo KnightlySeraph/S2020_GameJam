@@ -32,3 +32,6 @@ drill_step = 1; //1,2,3
 spot_chosen = false;
 
 damage_box = noone;
+
+// Audio var from justin
+deathSndPlayed = false;

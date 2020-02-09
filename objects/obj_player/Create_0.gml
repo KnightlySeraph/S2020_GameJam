@@ -26,6 +26,7 @@ hitpoints = 7;
 hurt = false;
 canSuck = false;
 sucking = false;
+dying = false;
 suckEnemy = noone;
 
 // IFrames
@@ -45,6 +46,9 @@ hitpointOffset = 64;
 
 // Init Sound Stuff
 audio_play_sound(snd_castleAmb, 1, true);
+if (!instance_exists(obj_persistentAudio)) {
+	instance_create_depth(x, y, 0, obj_persistentAudio);	
+}
 
 // Init cursor
 instance_create_depth(x, y, 0, obj_cursor);
