@@ -33,3 +33,7 @@ jumped = false;
 jump_hsp = 0;
 
 damage_box = noone;
+
+momentum = 0;
+momentum_timer = 0;
+last_direct = direct;

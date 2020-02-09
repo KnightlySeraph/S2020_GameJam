@@ -137,6 +137,24 @@ else image_alpha = 1;
 
 vsp += grav;
 
+if(state == "WALK") {
+	if(last_direct != direct) {
+		last_direct = direct;
+		momentum = 0;
+		momentum_timer = 0;
+	}
+	momentum_timer += 1;
+	if(momentum_timer > 30) {
+		momentum -= 1;
+		momentum_timer = 0;
+	}
+}
+else {
+	momentum = 0;
+	momentum_timer = 0;
+}
+hsp += momentum * direct;
+
 if(currentHealth > 0) {
 if(place_meeting(x+hsp,y, obj_solid)) {
 	while(!place_meeting(x+sign(hsp),y, obj_solid)) {
