@@ -9,7 +9,7 @@ switch(state) {
 		timer += 1;
 		
 		if(timer > 60) {
-			if(attacks >= attack_num) {
+			if(attacks >= attack_num || abs(healthPips - lastPip) >= 2){
 				state = "SWORDS";
 				hsp = 0;
 				timer = 0;
@@ -44,6 +44,15 @@ switch(state) {
 			state = "ATTACK";
 			hsp = 0;
 			attacks += 1;
+		}
+		else if(abs(healthPips - lastPip) >= 2) {
+			state = "SWORDS";
+			hsp = 0;
+			timer = 0;
+			attacks = 0;
+			attack_num = random_range(2,4);
+			sprite_index = spr_queen_summon_start;
+			swords = 0;
 		}
 		break;
 		
