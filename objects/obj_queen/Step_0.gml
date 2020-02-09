@@ -144,6 +144,8 @@ switch(state) {
 
 if(currentHealth <= nextPip) {
 	healthPips -= 1;
+	pipAway = true;
+	if (alarm[1] < 0) alarm[1] = room_speed * 0.5;
 	nextPip -= pipAmount;
 }
 if(currentHealth <= 0 && !ready) {

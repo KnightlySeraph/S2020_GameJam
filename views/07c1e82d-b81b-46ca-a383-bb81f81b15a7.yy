@@ -18,7 +18,8 @@
         "6fa86080-2ccc-4497-b8c6-3dae67caf088",
         "a0d4b030-4063-414f-aaed-5085dc7a84e7",
         "29c3e6ce-1409-45b9-b258-71c8b6ebd095",
-        "46660ab1-2648-4a10-a4b6-851f0dae5dc9"
+        "46660ab1-2648-4a10-a4b6-851f0dae5dc9",
+        "4fd15b8f-ee3d-44bf-9537-82d42c728dc5"
     ],
     "filterType": "GMSprite",
     "folderName": "Queen",
