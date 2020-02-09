@@ -1,0 +1,1 @@
+if(sprite_index = spr_knight_death) ready = true;
