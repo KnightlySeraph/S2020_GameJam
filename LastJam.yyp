@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "48002e2b-4a86-45ca-9bc0-e8bbc88c70c1",
+            "Value": {
+                "id": "42c2e3b7-2087-44c8-9b12-82b299d1149d",
+                "resourcePath": "views\\48002e2b-4a86-45ca-9bc0-e8bbc88c70c1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4c2c3c59-cb7b-431b-90c4-d41d75443054",
             "Value": {
                 "id": "f1255200-4e65-45e0-bbed-76aaa7db4d22",
@@ -476,6 +484,14 @@
                 "id": "a388e371-8744-4793-9959-b193785b861c",
                 "resourcePath": "views\\4f14102c-ab2a-4af8-9bea-2ee2a29e9e12.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "552b3d32-2108-4484-88d7-dfec48626b5b",
+            "Value": {
+                "id": "c3ccea8b-51a4-449f-b629-71f06461c7be",
+                "resourcePath": "objects\\obj_queen\\obj_queen.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1087,6 +1103,14 @@
             }
         },
         {
+            "Key": "b3710a7a-ab65-42ce-9e3b-85a0bb4b2dc9",
+            "Value": {
+                "id": "5837b5d3-a3ec-4e8e-9f67-be010b18ff9b",
+                "resourcePath": "objects\\obj_queen_sword\\obj_queen_sword.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b6ffa96b-8321-430f-aea8-2f641ae5ab76",
             "Value": {
                 "id": "17080550-9663-4e51-be6a-8e75d083c690",
@@ -1268,6 +1292,14 @@
                 "id": "af57ccc7-8423-47e7-b833-b3cdadc1747f",
                 "resourcePath": "sprites\\spr_player_feast_left\\spr_player_feast_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e26633ce-d89c-4d40-aaac-3196c5caf931",
+            "Value": {
+                "id": "a5ed2d68-f300-46fc-aa0c-3d8d90a454ab",
+                "resourcePath": "objects\\obj_queen_start\\obj_queen_start.yy",
+                "resourceType": "GMObject"
             }
         },
         {
