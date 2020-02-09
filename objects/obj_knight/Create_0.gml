@@ -31,3 +31,5 @@ grounded = false;
 jumped = false;
 
 jump_hsp = 0;
+
+damage_box = noone;

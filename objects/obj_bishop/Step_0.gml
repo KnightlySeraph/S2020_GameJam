@@ -31,9 +31,20 @@ switch(state) {
 		else if(drill_step == 3) sprite_index = spr_bishop_rise;
 		else {
 			sprite_index = spr_bishop_drill;
+			if(damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
+			if(damage_box != noone) {
+				damage_box.x = x + 46*direct;
+				damage_box.y = y + 66;
+				damage_box.image_xscale = 3.6;
+				damage_box.image_yscale = 1.3;
+			}
 			hsp = direct * spd;
 			timer += 1
 			if(timer > 45) {
+				if(damage_box != noone) {
+					with(damage_box) instance_destroy();
+					damage_box = noone;
+				}
 				drill_step = 3;
 				hsp = 0;
 				timer = 0;
@@ -43,7 +54,20 @@ switch(state) {
 		
 	case "TELEPORT":
 		if(!spot_chosen) sprite_index = spr_bishop_teleport_first;
-		else sprite_index = spr_bishop_teleport_second;
+		else {
+			sprite_index = spr_bishop_teleport_second;
+			if(image_index > 8 && image_index < 11 && damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
+			if(damage_box != noone) {
+				damage_box.x = x;
+				damage_box.y = y + 189;
+				damage_box.image_xscale = 6.6;
+				damage_box.image_yscale = 1;
+				if(image_index > 11) {
+					with(damage_box) instance_destroy();
+					damage_box = noone;
+				}
+			}
+		}
 		break;
 		
 	case "DEATH":
@@ -59,6 +83,10 @@ switch(state) {
 
 if(currentHealth <= 0 && !ready) {
 	state = "DEATH";
+	if(damage_box != noone) {
+		with(damage_box) instance_destroy();
+		damage_box = noone;
+	}
 }
 if(hollow) state = "HOLLOW";
 
@@ -88,7 +116,7 @@ if(alert && !exclamation && state != "DEATH" && state != "HOLLOW") {
 }
 
 if(hurt) image_alpha = random_range(0.4, 0.9);
-else image_alpha = 1;
+else if(sprite_index != spr_bishop_teleport_first) image_alpha = 1;
 
 vsp += grav;
 
