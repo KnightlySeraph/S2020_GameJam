@@ -1,0 +1,1 @@
+if(sprite_index == spr_button_menu_select) room_goto(MainMenu);
