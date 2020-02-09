@@ -49,7 +49,7 @@ switch(state) {
 		
 	case "ATTACK":
 		sprite_index = spr_queen_attack;
-		if(image_index > 4 && image_index < 6 && damage_box == noone) damage_box = instance_create_depth(x,y,depth-1,obj_enemy_damage);
+		if(image_index > 4 && image_index < 6 && damage_box == noone && current_sprite == sprite_index) damage_box = instance_create_depth(x,y,depth-1,obj_enemy_damage);
 		if(damage_box != noone) {
 			if(image_index > 11) {
 				with(damage_box) instance_destroy();
@@ -58,50 +58,50 @@ switch(state) {
 			else if(image_index > 10) {
 				damage_box.x = x + 165*direct;
 				damage_box.y = y + 110;
-				damage_box.image_xscale = 2.75;
-				damage_box.image_yscale = 4.75;
+				damage_box.image_xscale = 2.5;
+				damage_box.image_yscale = 4.5;
 				damage_box.image_angle = -15 * direct;
 			}
 			else if(image_index > 9) {
 				damage_box.x = x + 178*direct;
 				damage_box.y = y - 201;
-				damage_box.image_xscale = 1.9;
-				damage_box.image_yscale = 5;
+				damage_box.image_xscale = 1.5;
+				damage_box.image_yscale = 4.5;
 				damage_box.image_angle = 0;
 			}
 			else if(image_index > 8) {
 				damage_box.x = x + 44*direct;
 				damage_box.y = y - 448;
-				damage_box.image_xscale = 3.2;
-				damage_box.image_yscale = 2;
+				damage_box.image_xscale = 3;
+				damage_box.image_yscale = 1.8;
 				damage_box.image_angle = -15 * direct;
 			}
 			else if(image_index > 7) {
 				damage_box.x = x - 202*direct;
 				damage_box.y = y - 512;
-				damage_box.image_xscale = 5.2;
-				damage_box.image_yscale = 2.55;
+				damage_box.image_xscale = 5;
+				damage_box.image_yscale = 2.4;
 				damage_box.image_angle = 0;
 			}
 			else if(image_index > 6) {
 				damage_box.x = x - 387*direct;
 				damage_box.y = y - 351;
-				damage_box.image_xscale = 2.4;
-				damage_box.image_yscale = 5.8;
+				damage_box.image_xscale = 2.2;
+				damage_box.image_yscale = 5.5;
 				damage_box.image_angle = 0;
 			}
 			else if(image_index > 5) {
 				damage_box.x = x - 480*direct;
 				damage_box.y = y - 42;
-				damage_box.image_xscale = 1.55;
-				damage_box.image_yscale = 7;
+				damage_box.image_xscale = 1.4;
+				damage_box.image_yscale = 6;
 				damage_box.image_angle = 35 * direct;
 			}
 			else if(image_index > 4) {
 				damage_box.x = x - 215*direct;
 				damage_box.y = y + 212;
-				damage_box.image_xscale = 4;
-				damage_box.image_yscale = 0.875;
+				damage_box.image_xscale = 3.8;
+				damage_box.image_yscale = 0.8;
 				damage_box.image_angle = -35 * direct;
 			}
 		}
