@@ -5,3 +5,6 @@ dev = true;
 if (!dev) {
 	window_set_fullscreen(true);
 }
+
+// Stuff
+exiting = 0;
