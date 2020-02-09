@@ -12,7 +12,13 @@
         "36a74544-5d15-46f2-9457-8e089aa68f54",
         "77e1e421-c465-4d4e-9c48-5ada5c8f3ad5",
         "3193cef9-7047-4499-a1f5-a0191bb8417e",
-        "591efa5e-2568-4340-b39e-e14ff9bbbb35"
+        "591efa5e-2568-4340-b39e-e14ff9bbbb35",
+        "e5bd208f-15d9-433d-843f-32ab43fb9457",
+        "4ebb65f5-f45b-42a2-8e70-ab0a95009ebd",
+        "7e05bb87-9ff6-4b61-a398-ee9343411770",
+        "6fa86080-2ccc-4497-b8c6-3dae67caf088",
+        "a0d4b030-4063-414f-aaed-5085dc7a84e7",
+        "29c3e6ce-1409-45b9-b258-71c8b6ebd095"
     ],
     "filterType": "GMSprite",
     "folderName": "Queen",

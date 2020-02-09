@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "29c3e6ce-1409-45b9-b258-71c8b6ebd095",
+            "Value": {
+                "id": "520c60f4-faf3-47be-b4d6-d4611fd545f3",
+                "resourcePath": "sprites\\spr_queen_summon_sword\\spr_queen_summon_sword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "29d102ab-fff1-457b-a389-47fe38d9cd17",
             "Value": {
                 "id": "a6037a97-5129-4181-a1fc-0164cc717196",
@@ -463,6 +471,14 @@
             }
         },
         {
+            "Key": "4ebb65f5-f45b-42a2-8e70-ab0a95009ebd",
+            "Value": {
+                "id": "2709e7fa-5692-4365-9523-e46f5faa81ab",
+                "resourcePath": "sprites\\spr_sword_still\\spr_sword_still.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f14102c-ab2a-4af8-9bea-2ee2a29e9e12",
             "Value": {
                 "id": "a388e371-8744-4793-9959-b193785b861c",
@@ -647,6 +663,14 @@
             }
         },
         {
+            "Key": "6fa86080-2ccc-4497-b8c6-3dae67caf088",
+            "Value": {
+                "id": "77980b0c-e435-412f-a37b-24a8446988ff",
+                "resourcePath": "sprites\\spr_queen_put_that_shit_away\\spr_queen_put_that_shit_away.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71a5a14c-a9c9-4b92-9d2e-cef6bf713c24",
             "Value": {
                 "id": "6a2c4e6d-9a70-4690-ba7b-b74bd87f8598",
@@ -748,6 +772,14 @@
                 "id": "8500b80c-be34-4841-97ed-34bfd183ef9f",
                 "resourcePath": "views\\7a77ff6d-4727-4379-80fd-14044ad7a7d6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7e05bb87-9ff6-4b61-a398-ee9343411770",
+            "Value": {
+                "id": "86daad42-9c1e-4db6-bcb7-f66d0d70388e",
+                "resourcePath": "sprites\\spr_sword_app\\spr_sword_app.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -964,6 +996,14 @@
                 "id": "07b4c514-b32f-4082-9c7f-0548e01c35b5",
                 "resourcePath": "views\\9eb4dc3c-6970-4753-88c2-41ec39302545.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a0d4b030-4063-414f-aaed-5085dc7a84e7",
+            "Value": {
+                "id": "40a9c957-8a79-43e0-be8e-f30a09d4e791",
+                "resourcePath": "sprites\\spr_queen_summon_loop\\spr_queen_summon_loop.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1244,6 +1284,14 @@
                 "id": "aa674a13-33ba-413e-978a-81b9e64942d2",
                 "resourcePath": "objects\\obj_godrays\\obj_godrays.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e5bd208f-15d9-433d-843f-32ab43fb9457",
+            "Value": {
+                "id": "c5c7c7e2-81c4-4ca8-8172-7ee90ea5b688",
+                "resourcePath": "sprites\\spr_sword_dissappear\\spr_sword_dissappear.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
