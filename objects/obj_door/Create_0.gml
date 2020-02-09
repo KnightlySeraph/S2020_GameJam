@@ -11,3 +11,5 @@ text_alpha = 0;
 enemies_left = numEnemies;
 
 text = "";
+
+soundPlayed = false;

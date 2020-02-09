@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (open && place_meeting(x, y, obj_player)) {
-	image_speed = 1;	
+	image_speed = 1;
+	if (!soundPlayed) {
+		audio_play_sound(snd_doorOpen, 1, false);
+		soundPlayed = true;
+	}
 }
 
 

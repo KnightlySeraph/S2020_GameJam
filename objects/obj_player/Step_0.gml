@@ -274,6 +274,10 @@ if (grounded && move != 0 && mouse_check_button(mb_left) && !dying) {
 	else if (move == -1) {
 		sprite_index = spr_walk_shoot_left;	
 	}
+	// Play shooting sound
+	 if (!audio_is_playing(snd_firing)) {
+		 audio_play_sound(snd_firing, 0.4, false);
+	 }
 }
 
 // Jumping Animation
