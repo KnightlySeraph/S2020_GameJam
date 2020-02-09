@@ -46,7 +46,7 @@ switch(state) {
 		}
 		else {
 			direct = -sign(obj_player.x - x);
-			if(abs(y-obj_player.y) > 192 && y > obj_player.y && abs(x-obj_player.x) < 480) {
+			if(y > obj_player.y && abs(x-obj_player.x) < 480) {
 				if(!collision_line(x,y,x, y-784, obj_solid, false, false) && obj_player.grounded) {
 					state = "JUMP";
 					if(damage_box != noone) {
@@ -96,6 +96,7 @@ switch(state) {
 		else sprite_index = spr_knight_midair;
 		if(vsp < 0) hsp = 0;
 		else if(!grounded) hsp = -direct * jump_hsp;
+		else hsp = 0;
 		break;
 		
 	case "DEATH":
@@ -139,7 +140,7 @@ if(alert && !exclamation && state != "DEATH" && state != "HOLLOW") {
 	exclamation = true;
 	var point = instance_create_depth(x,y,depth,obj_alert);
 	point.parent = self;
-	point.yoffset = -250;
+	point.yoffset = -200;
 	point.image_xscale = direct;
 }
 
