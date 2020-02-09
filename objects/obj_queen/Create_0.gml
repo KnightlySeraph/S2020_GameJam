@@ -12,7 +12,7 @@ spd = 3;
 maxHealth = 5;
 currentHealth = maxHealth;
 
-alert = false;
+alert = true;
 alert_timer = 0;
 timer = 0;
 random_num = irandom_range(60,90);

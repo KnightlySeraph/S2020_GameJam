@@ -195,7 +195,7 @@ x+=hsp;
 y+=vsp;
 
 image_xscale = direct;
-suck_x = x-(direct * 70)
+suck_x = x;
 
 if(current_sprite != sprite_index) {
 	current_sprite = sprite_index;

@@ -6,6 +6,6 @@ if(place_meeting(x,y,obj_player) && !hollow) {
 	}
 	else if(obj_player.suckEnemy == self && obj_player.sucking && dark_alpha < 1) dark_alpha += 0.01;
 	
-	if(!obj_player.sucking) text_alpha = 1;
+	if(!obj_player.sucking && obj_player.suckEnemy = self) text_alpha = 1;
 }
 else if(dark_alpha > 0) dark_alpha -= 0.05;
