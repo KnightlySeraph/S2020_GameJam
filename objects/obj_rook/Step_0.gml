@@ -4,7 +4,7 @@ else mask_index = spr_rook_ready;
 switch(state) {
 	case "IDLE":
 		timer += 1;
-		if(alert && timer > 120) {
+		if(alert && timer > 240) {
 			state = "ATTACK";
 			timer = 0;
 		}
