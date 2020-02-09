@@ -35,7 +35,41 @@ switch(state) {
 		}
 		else {
 			direct = -sign(obj_player.x - x);
+			if(abs(y-obj_player.y) > 192 && y > obj_player.y && abs(x-obj_player.x) < 480) {
+				if(!collision_line(x,y,x, y-784, obj_solid, false, false) && obj_player.grounded) {
+					state = "JUMP";
+					var temp_vsp = 0;
+					var temp_y = y-528;
+					var y_dist = 0;
+					while(!place_meeting(obj_player.x,temp_y, obj_solid)) {
+						temp_vsp += 1;
+						temp_y += temp_vsp;
+						y_dist += 1;
+					}
+					var x_dist = abs(x-obj_player.x);
+					jump_hsp = x_dist/y_dist;
+				}
+				else {
+					alert = false;
+					exclamation = false;
+				}
+			}
 		}
+		break;
+		
+	case "JUMP":
+		if(grounded) {
+			timer = 0;
+			if(!jumped) {
+				sprite_index = spr_knight_jump;
+			}
+			else {
+				sprite_index = spr_knight_land;
+			}
+		}
+		else sprite_index = spr_knight_midair;
+		if(vsp < 0) hsp = 0;
+		else if(!grounded) hsp = -direct * jump_hsp;
 		break;
 		
 	case "DEATH":
@@ -90,12 +124,7 @@ if(place_meeting(x+hsp,y, obj_solid)) {
 		x += sign(hsp);
 	}
 	hsp = 0;
-	direct = -direct;
-}
-else if(!place_meeting(x + (sign(hsp) * 45), y + 1, obj_solid)) {
-	hsp = 0;
 	if(!alert) direct = -direct;
-	else state = "IDLE"
 }
 }
 
@@ -103,8 +132,14 @@ if(place_meeting(x,y+vsp, obj_solid)) {
 	while(!place_meeting(x,y+sign(vsp), obj_solid)) {
 		y += sign(vsp);
 	}
+	if(vsp < 0 ) {
+		alert = false;
+		exclamation = false;
+	}
+	grounded = true;
 	vsp = 0;
 }
+else grounded = false;
 
 
 x+=hsp;

@@ -50,6 +50,17 @@ switch(state) {
 		
 	case "ATTACK":
 		sprite_index = spr_pawn_attack;
+		if(image_index > 6 && image_index < 8 && damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
+		if(damage_box != noone) {
+			damage_box.x = x - 77*direct;
+			damage_box.y = y + 75;
+			damage_box.image_xscale = 0.7
+			damage_box.image_yscale = 0.75
+			if(image_index > 8) {
+				with(damage_box) instance_destroy();
+				damage_box = noone;
+			}
+		}
 		break;
 		
 	case "DEATH":
@@ -67,6 +78,10 @@ if(currentHealth <= 0 && !ready) {
 	state = "DEATH";
 	if(place_meeting(x-(direct * 70), y, obj_solid) || !place_meeting(x-(direct*70), y+1, obj_solid)) {
 		direct = -direct;
+	}
+	if(damage_box != noone) {
+		with(damage_box) instance_destroy();
+		damage_box = noone;
 	}
 }
 if(hollow) state = "HOLLOW";

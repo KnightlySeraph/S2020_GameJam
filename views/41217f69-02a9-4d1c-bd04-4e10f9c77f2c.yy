@@ -10,7 +10,8 @@
         "00dfa819-497d-4f68-a987-c8faab1c462f",
         "4f14102c-ab2a-4af8-9bea-2ee2a29e9e12",
         "07c1e82d-b81b-46ca-a383-bb81f81b15a7",
-        "8067f744-d9a8-453e-ab04-c07908b6469c"
+        "8067f744-d9a8-453e-ab04-c07908b6469c",
+        "906c5098-ba33-460e-9332-93ce62104745"
     ],
     "filterType": "GMSprite",
     "folderName": "Enemies",

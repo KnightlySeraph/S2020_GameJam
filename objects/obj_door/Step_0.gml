@@ -28,3 +28,9 @@ for (i = 0; i < instance_number(obj_enemy); i++) {
 }
 
 numEnemies = instance_number(obj_enemy);
+
+if (open && place_meeting(x, y, obj_player) && keyboard_check_pressed(ord("S"))) {
+	if (instance_exists(obj_transition)) {
+		obj_transition.transition = true;	
+	}
+}
