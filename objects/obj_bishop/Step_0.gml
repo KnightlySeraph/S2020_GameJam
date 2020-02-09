@@ -1,5 +1,5 @@
 if(state != "DEATH" && state != "HOLLOW") mask_index = spr_bishop_idle;
-//else mask_index = spr_bishop_ready;
+else mask_index = spr_bishop_ready;
 
 switch(state) {
 	case "IDLE":
@@ -7,7 +7,7 @@ switch(state) {
 		hsp = 0;
 		if(alert) {
 			timer += 1;
-			if(timer > 90) {
+			if(timer > random_num) {
 				direct = -sign(x-obj_player.x);
 				if(abs(x-obj_player.x) < 600 && abs(y - obj_player.y) < 192) {
 					state = "ATTACK";
@@ -20,6 +20,7 @@ switch(state) {
 					state = "TELEPORT";
 					hsp = 0;
 					timer = 0;
+					spot_chosen = false;
 				}
 			}
 		}
@@ -41,31 +42,30 @@ switch(state) {
 		break;
 		
 	case "TELEPORT":
-		state = "ATTACK";
-		timer = 0;
+		if(!spot_chosen) sprite_index = spr_bishop_teleport_first;
+		else sprite_index = spr_bishop_teleport_second;
 		break;
 		
 	case "DEATH":
-		//if(!ready) sprite_index = spr_bishop_death;
-		//else sprite_index = spr_bishop_ready;
+		if(!ready) sprite_index = spr_bishop_death;
+		else sprite_index = spr_bishop_ready;
 		hsp = 0;
 		break;
 		
 	case "HOLLOW":
-		//sprite_index = spr_bishop_hollow;
+		sprite_index = spr_bishop_hollow;
 		break;
 }
 
 if(currentHealth <= 0 && !ready) {
 	state = "DEATH";
-	if(place_meeting(x-(direct * 70), y, obj_solid) || !place_meeting(x-(direct*70), y+1, obj_solid)) {
-		direct = -direct;
-	}
 }
+if(hollow) state = "HOLLOW";
 
 if(abs(obj_player.x - x) < 640 && abs(obj_player.y - y) < 192 && sign(x-obj_player.x) == -direct && !alert) {
 	alert = true;
 	alert_timer = 0;
+	direct = -sign(x-obj_player.x);
 }
 else if(abs(point_distance(x,y,obj_player.x, obj_player.y)) < 1080 && alert) {
 	alert = true;
@@ -83,7 +83,7 @@ if(alert && !exclamation && state != "DEATH" && state != "HOLLOW") {
 	exclamation = true;
 	var point = instance_create_depth(x,y,depth,obj_alert);
 	point.parent = self;
-	point.yoffset = -16;
+	point.yoffset = -128;
 	point.image_xscale = direct;
 }
 

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "20d023ff-760d-4a2f-acdb-437ae237f400",
+            "Value": {
+                "id": "ba9984a0-861b-4922-82a8-5aca1d7d8270",
+                "resourcePath": "sprites\\spr_bishop_hollow\\spr_bishop_hollow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "21ffc2a1-e697-4719-a8e2-3b94b2c45d24",
             "Value": {
                 "id": "334a673d-7a9b-489c-a516-1250735cbbf4",
@@ -703,6 +711,14 @@
             }
         },
         {
+            "Key": "92ea338e-5cd5-4f1f-8cc1-1690791bb6ac",
+            "Value": {
+                "id": "e46e15e9-95b0-4ad2-a324-d6de3844e01d",
+                "resourcePath": "sprites\\spr_bishop_ready\\spr_bishop_ready.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9b00aeee-208e-4627-a753-f6aa573ef7f2",
             "Value": {
                 "id": "8c6d902f-c5b9-4562-b50d-4a683c563014",
@@ -795,6 +811,14 @@
             "Value": {
                 "id": "fecd636c-5a39-4ea5-a251-c4033bb937cd",
                 "resourcePath": "sprites\\spr_player_bullet_boom\\spr_player_bullet_boom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b6ffa96b-8321-430f-aea8-2f641ae5ab76",
+            "Value": {
+                "id": "17080550-9663-4e51-be6a-8e75d083c690",
+                "resourcePath": "sprites\\spr_bishop_death\\spr_bishop_death.yy",
                 "resourceType": "GMSprite"
             }
         },
