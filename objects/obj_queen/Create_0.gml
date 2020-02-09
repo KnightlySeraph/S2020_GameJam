@@ -7,7 +7,7 @@ hsp = 0;
 vsp = 0;
 grav = 1;
 
-spd = 1;
+spd = 2;
 
 pipAmount = 15;
 maxHealth = (pipAmount * 16);
