@@ -410,7 +410,7 @@
             "Key": "46660ab1-2648-4a10-a4b6-851f0dae5dc9",
             "Value": {
                 "id": "79b184b0-7b9f-423b-b7c3-1f10c26d3555",
-                "resourcePath": "sprites\\spr_queen_walk_swood\\spr_queen_walk_swood.yy",
+                "resourcePath": "sprites\\spr_queen_walk\\spr_queen_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
