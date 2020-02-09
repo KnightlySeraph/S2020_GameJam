@@ -6,8 +6,9 @@ direct = 1;
 hsp = 0;
 vsp = 0;
 grav = 1;
+spd = 20;
 
-maxHealth = 50;
+maxHealth = 20;
 currentHealth = maxHealth;
 
 alert = false;
@@ -25,3 +26,7 @@ hollow = false;
 suck_x = x;
 
 dark_alpha = 0;
+
+drill_step = 1; //1,2,3
+
+spot_chosen = false;
