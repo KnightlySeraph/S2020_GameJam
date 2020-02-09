@@ -15,6 +15,8 @@ switch(state) {
 				timer = 0;
 				attacks = 0;
 				attack_num = random_range(2,4);
+				sprite_index = spr_queen_summon_start;
+				swords = 0;
 			}
 			else {
 				if(abs(x-obj_player.x) < 475) {
@@ -51,7 +53,16 @@ switch(state) {
 		
 	case "SWORDS":
 		hsp = 0;
-		if(sprite_index != spr_queen_summon_loop) sprite_index = spr_queen_summon_start;
+		if(sprite_index = spr_queen_summon_loop) {
+			timer += 1;
+			if(timer > 30) {
+				if(swords > (16-healthPips)) sprite_index = spr_queen_summon_end;
+				else {
+					swords += 1;
+					timer = 0;
+				}
+			}
+		}
 		break;
 		
 	case "DEATH":

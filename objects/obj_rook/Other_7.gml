@@ -4,3 +4,4 @@ if(sprite_index == spr_rook_hide) {
 	sprite_index = spr_rook_idle_hide;
 	timer = 100;
 }
+if(sprite_index == spr_rook_reveal) sprite_index = spr_rook_idle;

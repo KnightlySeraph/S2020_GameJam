@@ -37,3 +37,4 @@ text_alpha = 0;
 
 attack_num = irandom_range(2,4);
 attacks = 0;
+swords = 0;

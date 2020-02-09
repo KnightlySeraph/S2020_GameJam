@@ -42,7 +42,7 @@ else if(currentHealth > 0) {
 	if(alert_timer > 30) {
 		alert = false;
 		exclamation = false;
-		sprite_index = spr_rook_idle;
+		sprite_index = spr_rook_reveal;
 	}
 }
 

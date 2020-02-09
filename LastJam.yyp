@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "9e6e4553-9a47-480c-bd69-92675fe32587",
+            "Value": {
+                "id": "fb968a8a-98c0-4aed-8397-5c40686fb470",
+                "resourcePath": "sprites\\spr_rook_reveal\\spr_rook_reveal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9eb4dc3c-6970-4753-88c2-41ec39302545",
             "Value": {
                 "id": "07b4c514-b32f-4082-9c7f-0548e01c35b5",
