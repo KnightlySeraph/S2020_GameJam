@@ -24,11 +24,22 @@ switch(state) {
 	
 	case "WALK":
 		sprite_index = spr_knight_walk;
+		if(damage_box == noone) damage_box = instance_create_depth(x,y,depth,obj_enemy_damage);
+		if(damage_box != noone) {
+			damage_box.x = x - 40*direct;
+			damage_box.y = y + 86;
+			damage_box.image_xscale = 1.2;
+			damage_box.image_yscale = 3.3;
+		}
 		if(vsp==0) hsp = spd * -direct;
 		if(!alert) {
 			timer += 1;
 			if(timer > random_num) {
 				state = "IDLE";
+				if(damage_box != noone) {
+					with(damage_box) instance_destroy();
+					damage_box = noone;
+				}
 				timer = 0;
 				random_num = irandom_range(90,120);
 			}
@@ -38,6 +49,10 @@ switch(state) {
 			if(abs(y-obj_player.y) > 192 && y > obj_player.y && abs(x-obj_player.x) < 480) {
 				if(!collision_line(x,y,x, y-784, obj_solid, false, false) && obj_player.grounded) {
 					state = "JUMP";
+					if(damage_box != noone) {
+						with(damage_box) instance_destroy();
+						damage_box = noone;
+					}
 					var temp_vsp = 0;
 					var temp_y = y-528;
 					var y_dist = 0;
@@ -85,6 +100,10 @@ switch(state) {
 
 if(currentHealth <= 0 && !ready) {
 	state = "DEATH";
+	if(damage_box != noone) {
+		with(damage_box) instance_destroy();
+		damage_box = noone;
+	}
 }
 if(hollow) state = "HOLLOW";
 

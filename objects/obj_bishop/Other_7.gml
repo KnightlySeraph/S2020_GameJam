@@ -9,6 +9,7 @@ if(sprite_index = spr_bishop_crouch) drill_step = 2;
 
 if(sprite_index == spr_bishop_teleport_first) {
 	if(obj_player.grounded) {
+		image_alpha = 1;
 		spot_chosen = true;
 		var target_x = obj_player.x;
 		var target_y = obj_player.y;
@@ -29,7 +30,10 @@ if(sprite_index == spr_bishop_teleport_first) {
 
 		direct = sign(obj_player.x-x);
 	}
-	else image_index = image_index - 1;
+	else {
+		image_index = image_index - 1;
+		image_alpha = 0;
+	}
 }
 else if(sprite_index == spr_bishop_teleport_second) {
 	spot_chosen = false;
