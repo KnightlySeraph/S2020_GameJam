@@ -33,5 +33,7 @@ spot_chosen = false;
 
 damage_box = noone;
 
-// Audio var from justin
+text_alpha = 0;
+
+// Audio from justin
 deathSndPlayed = false;

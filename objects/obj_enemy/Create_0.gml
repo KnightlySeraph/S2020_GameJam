@@ -8,3 +8,4 @@ state = "NONE";
 suck_x = x;
 
 dark_alpha = 0;
+text_alpha = 0;
