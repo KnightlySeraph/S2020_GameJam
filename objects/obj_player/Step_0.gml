@@ -109,11 +109,13 @@ else {
 	scr_cam_zoom(1080, 1, 0.1, 1);
 	suckShake = oriSuckShake;
 	// Make screen light
-	with (obj_lightSys) {
-		if (intensity > 0.6) {
-			intensity -= 0.01;
-			intensity = clamp(intensity, 0.0, 1.0);
-		}	
+	if (!obj_transition.transition) {
+		with (obj_lightSys) {
+			if (intensity > 0.6) {
+				intensity -= 0.01;
+				intensity = clamp(intensity, 0.0, 1.0);
+			}	
+		}
 	}
 }
 

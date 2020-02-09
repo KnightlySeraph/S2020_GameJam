@@ -46,5 +46,11 @@ hitpointOffset = 64;
 // Init Sound Stuff
 audio_play_sound(snd_castleAmb, 1, true);
 
+// Init cursor
 instance_create_depth(x, y, 0, obj_cursor);
 window_set_cursor(cr_none);
+
+// Init level transition
+if (!instance_exists(obj_transition)) {
+	instance_create_depth(x, y, 0, obj_transition);	
+}
