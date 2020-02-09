@@ -1,1 +1,1 @@
-if(place_meeting(x,y,obj_player)) obj_player.hurt = true;
+if(place_meeting(x,y,obj_player) && !obj_player.invin) obj_player.hurt = true;

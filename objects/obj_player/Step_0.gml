@@ -151,6 +151,7 @@ else if (keyboard_check_pressed(vk_subtract)) {
 // Health Stuff
 if (hurt) {
 	if (alarm[3] < 0) alarm[3] = room_speed * 0.5;	
+	if (!invin) invin = true;
 }
 
 // Gunplay
@@ -252,6 +253,16 @@ if (!grounded && vsp > 0) {
 	}
 	else if (moving_left) {
 		sprite_index = spr_player_fall_left;	
+	}
+}
+
+// Firing while moving
+if (grounded && move != 0 && mouse_check_button(mb_left)) {
+	if (move == 1) {
+		sprite_index = spr_walk_shoot_right;	
+	}
+	else if (move == -1) {
+		sprite_index = spr_walk_shoot_left;	
 	}
 }
 
