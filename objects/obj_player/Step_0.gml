@@ -77,7 +77,7 @@ if (keyboard_check(ord("S")) && place_meeting(x, y, obj_enemy) && grounded) {
 			// Screen dim
 			with (obj_lightSys) {
 				intensity += 0.01;	
-				intensity = clamp(intensity, 0.0, 0.95);
+				intensity = clamp(intensity, 0.0, 0.8);
 			}
 		}
 		else {
