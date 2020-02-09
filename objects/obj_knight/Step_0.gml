@@ -61,17 +61,15 @@ switch(state) {
 		if(grounded) {
 			timer = 0;
 			if(!jumped) {
-				vsp = -32;
-				jumped = true;
-				direct = -sign(obj_player.x - x);
+				sprite_index = spr_knight_jump;
 			}
 			else {
-				state = "IDLE";
-				jumped = false;
+				sprite_index = spr_knight_land;
 			}
 		}
+		else sprite_index = spr_knight_midair;
 		if(vsp < 0) hsp = 0;
-		else hsp = -direct * jump_hsp;
+		else if(!grounded) hsp = -direct * jump_hsp;
 		break;
 		
 	case "DEATH":
