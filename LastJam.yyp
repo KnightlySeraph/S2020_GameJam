@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "4fd15b8f-ee3d-44bf-9537-82d42c728dc5",
+            "Value": {
+                "id": "fa245963-34c0-45e2-85df-030bbe25216b",
+                "resourcePath": "sprites\\spr_healthPipQueen\\spr_healthPipQueen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "552b3d32-2108-4484-88d7-dfec48626b5b",
             "Value": {
                 "id": "c3ccea8b-51a4-449f-b629-71f06461c7be",
