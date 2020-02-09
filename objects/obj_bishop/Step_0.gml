@@ -9,7 +9,7 @@ switch(state) {
 			timer += 1;
 			if(timer > random_num) {
 				direct = -sign(x-obj_player.x);
-				if(abs(x-obj_player.x) < 600 && abs(y - obj_player.y) < 192) {
+				if(abs(x-obj_player.x) < 700 && abs(y - obj_player.y) < 192) {
 					state = "ATTACK";
 					hsp = 0;
 					timer = 0;
