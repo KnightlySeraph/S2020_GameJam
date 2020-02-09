@@ -139,7 +139,7 @@ if(alert && !exclamation && state != "DEATH" && state != "HOLLOW") {
 	exclamation = true;
 	var point = instance_create_depth(x,y,depth,obj_alert);
 	point.parent = self;
-	point.yoffset = -16;
+	point.yoffset = -250;
 	point.image_xscale = direct;
 }
 
