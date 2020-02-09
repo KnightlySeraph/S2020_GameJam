@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "18f8159b-1808-4ab0-a227-0ee4b0de6052",
+            "Value": {
+                "id": "616ae1fc-8a5e-42f2-a7bf-1b1a0d9335cc",
+                "resourcePath": "rooms\\Level10\\Level10.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1a42ff91-9e2c-4bf2-ba37-434e30d58d2f",
             "Value": {
                 "id": "2370dd65-5f6c-4259-97a6-1f0ca8f8df6f",
@@ -284,6 +292,14 @@
                 "id": "b19be7f7-a192-4141-8a3c-32c797a2ba47",
                 "resourcePath": "sprites\\spr_rook_idle_hide\\spr_rook_idle_hide.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2c60bd82-c8e5-4aed-8d7c-6c40a5c32c0e",
+            "Value": {
+                "id": "8a86ac89-0171-42a2-8bad-f37869beb023",
+                "resourcePath": "sounds\\snd_queensTrack\\snd_queensTrack.yy",
+                "resourceType": "GMSound"
             }
         },
         {
