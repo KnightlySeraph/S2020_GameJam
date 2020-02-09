@@ -11,10 +11,11 @@ switch(state) {
 			state = "WALK";
 			timer = 0;
 		}
-		if(abs(x-obj_player.x) < 400) {
+		if(abs(x-obj_player.x) < 450 && timer > 30) {
 			state = "ATTACK";
 			hsp = 0;
 			timer = 0;
+			direct = -sign(obj_player.x - x);
 		}
 		
 		break;
@@ -23,7 +24,7 @@ switch(state) {
 		sprite_index = spr_queen_cloak_walk;
 		if(vsp==0) hsp = spd * -direct;
 		direct = -sign(obj_player.x - x);
-		if(abs(x-obj_player.x) < 400) {
+		if(abs(x-obj_player.x) < 450) {
 			state = "ATTACK";
 			hsp = 0;
 		}
@@ -44,6 +45,10 @@ switch(state) {
 		break;
 }
 
+if(currentHealth <= nextPip) {
+	healthPips -= 1;
+	nextPip -= pipAmount;
+}
 if(currentHealth <= 0 && !ready) {
 	state = "DEATH";
 	if(damage_box != noone) {

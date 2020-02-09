@@ -9,7 +9,7 @@ grav = 1;
 
 spd = 3;
 
-maxHealth = 5;
+maxHealth = 15;
 currentHealth = maxHealth;
 
 alert = false;

@@ -7,10 +7,14 @@ hsp = 0;
 vsp = 0;
 grav = 1;
 
-spd = 3;
+spd = 1;
 
-maxHealth = 5;
+pipAmount = 20;
+maxHealth = (pipAmount * 16);
 currentHealth = maxHealth;
+
+healthPips = 16;
+nextPip = currentHealth - pipAmount;
 
 alert = true;
 alert_timer = 0;

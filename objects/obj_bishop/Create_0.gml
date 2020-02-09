@@ -8,7 +8,7 @@ vsp = 0;
 grav = 1;
 spd = 20;
 
-maxHealth = 20;
+maxHealth = 30;
 currentHealth = maxHealth;
 
 alert = false;
