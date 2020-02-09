@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "59ad1ff5-a6b0-4f7a-915e-084ef43764c3",
+            "Value": {
+                "id": "b1a58817-fc8b-4aee-8823-bc8328b2d671",
+                "resourcePath": "sounds\\snd_dagger\\snd_dagger.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "59b6a180-b7fa-47da-931c-88ad08669ea4",
             "Value": {
                 "id": "0c1070c6-d362-47a5-9202-b5d724e6aac3",

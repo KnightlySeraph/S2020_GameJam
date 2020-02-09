@@ -9,6 +9,10 @@ switch(state) {
 	case "DEATH":
 		if(!ready) sprite_index = spr_king_death;
 		else sprite_index = spr_king_ready;
+		if (!deathNoise) {
+			audio_play_sound(snd_jump, 1, false);
+			deathNoise = true;
+		}
 		hsp = 0;
 		break;
 		

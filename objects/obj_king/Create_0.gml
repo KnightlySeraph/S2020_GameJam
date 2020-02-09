@@ -13,3 +13,5 @@ currentSprite = sprite_index;
 healthPips = 16;
 
 hitpointOffset = 64;
+
+deathNoise = false;
